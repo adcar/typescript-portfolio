@@ -9,19 +9,27 @@ const styles = (theme: any) => ({
 			width: 30
 		},
 		'&:nth-of-type(3)': {
-			width: 20
+			width: 40
 		},
 		backgroundColor: 'white',
 		borderRadius: 7,
 		height: 7,
-		marginBottom: 6
+		marginBottom: 6,
+		transition: 'all 0.25s ease-out'
 	}
 })
-class BurgerIcon extends React.Component<any, any> {
+interface IProps {
+	classes: any
+}
+class BurgerIcon extends React.Component<IProps> {
+	constructor(props) {
+		super(props)
+	}
+
 	public render() {
 		const { classes } = this.props
 		return (
-			<div>
+			<div className={classes.root}>
 				<div className={classes.line} />
 				<div className={classes.line} />
 				<div className={classes.line} />

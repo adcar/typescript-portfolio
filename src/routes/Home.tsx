@@ -28,12 +28,23 @@ const styles = theme => ({
 	link: {
 		textDecoration: 'none'
 	},
+	logo: {
+		borderRadius: '50%',
+		marginBottom: 20
+	},
 	resumeBtn: {
 		'&:hover': {
 			backgroundColor: '#eb3b5a'
 		},
 		backgroundColor: theme.main,
 		marginRight: theme.spacing.unit
+	},
+
+	wrapper: {
+		alignItems: 'center',
+		display: 'flex',
+		flexDirection: 'column',
+		justifyContent: 'center'
 	}
 })
 class Home extends React.Component<IProps> {
@@ -42,7 +53,11 @@ class Home extends React.Component<IProps> {
 		return (
 			<div>
 				<Header>
-					<div style={{ padding: 20 }}>
+					<div className={classes.wrapper}>
+						<img
+							src="https://via.placeholder.com/280x280"
+							className={classes.logo}
+						/>
 						<Typography
 							component="h1"
 							variant="display3"

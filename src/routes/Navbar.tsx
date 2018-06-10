@@ -1,3 +1,4 @@
+import Typography from '@material-ui/core/Typography'
 import * as React from 'react'
 import { scaleRotate as Menu } from 'react-burger-menu'
 import injectSheet from 'react-jss'
@@ -93,7 +94,7 @@ class Navbar extends React.Component<IProps> {
 				>
 					<NavList />
 				</Menu>
-				<span>Alexander Cardosi</span>
+				<Typography variant="headline">Alexander Cardosi</Typography>
 			</div>
 		)
 	}

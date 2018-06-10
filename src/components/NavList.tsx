@@ -82,7 +82,7 @@ class NestedList extends React.Component<IProps, IState> {
 						{this.state.open ? <ExpandLess /> : <ExpandMore />}
 					</ListItem>
 					<Collapse in={this.state.open} timeout="auto" unmountOnExit={true}>
-						<List component="div" disablePadding={true}>
+						<List component="div">
 							<ListItem button={true} className={classes.item}>
 								<Link
 									className={[classes.link, classes.nested].join(' ')}
