@@ -1,9 +1,15 @@
 import * as React from 'react'
 import injectSheet from 'react-jss'
+import bgImg from '../img/bgImg.jpg'
 const styles = theme => ({
 	root: {
 		alignItems: 'center',
 		backgroundColor: theme.bg,
+		backgroundImage: `linear-gradient(${theme.bgTrans}, ${
+			theme.bgTrans
+		}), url(${bgImg})`,
+		backgroundPosition: 'center',
+		backgroundSize: 'cover',
 		color: 'white',
 		display: 'flex',
 		height: '100vh',
