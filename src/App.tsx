@@ -9,7 +9,8 @@ import Home from './routes/Home'
 
 import injectSheet from 'react-jss'
 
-import Navbar from './routes/Navbar'
+import Footer from './components/Footer'
+import Navbar from './components/Navbar'
 
 const theme = createMuiTheme({
 	palette: {
@@ -38,10 +39,13 @@ class App extends React.Component<IProps> {
 			<div className={classes.bg}>
 				<MuiThemeProvider theme={theme}>
 					<Router>
-						<div id="outer-container">
+						<div>
 							<Navbar />
-							<div id="page-wrap">
-								<Route path="/" exact={true} component={Home} />
+							<div id="outer-container">
+								<div id="page-wrap">
+									<Route path="/" exact={true} component={Home} />
+									<Footer />
+								</div>
 							</div>
 						</div>
 					</Router>

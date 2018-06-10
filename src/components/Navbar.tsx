@@ -27,7 +27,7 @@ const bmStyles = {
 	bmMenu: {
 		background: '#4b6584',
 		fontSize: '1.15em',
-		overflow: 'hidden',
+
 		zIndex: '2'
 	},
 	bmMenuWrap: {
@@ -55,8 +55,6 @@ const bmStyles = {
 
 		left: '0px',
 		top: '0px',
-
-		height: '100vh',
 		width: '100vw'
 	}
 }

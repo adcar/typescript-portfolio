@@ -7,6 +7,9 @@ import registerServiceWorker from './registerServiceWorker'
 import { ThemeProvider } from 'react-jss'
 const theme = {
 	bg: '#4b6584',
+	breakpoints: {
+		md: '@media (min-width: 720px)'
+	},
 	main: '#fc5c65',
 	spacing: {
 		unit: 20
