@@ -5,6 +5,7 @@ import Typography from '@material-ui/core/Typography'
 import injectSheet from 'react-jss'
 import { Link } from 'react-router-dom'
 import Header from '../components/Header'
+import Logo from '../img/logo.svg'
 
 interface IProps {
 	classes: any
@@ -33,7 +34,6 @@ const styles = theme => ({
 			height: 280,
 			width: 280
 		},
-		borderRadius: '50%',
 		height: 200,
 		marginBottom: 20,
 		width: 200
@@ -49,7 +49,8 @@ const styles = theme => ({
 		[theme.breaks.md]: {
 			fontSize: 34
 		},
-		fontSize: 20
+		fontSize: 20,
+		marginTop: 0
 	},
 	title: {
 		[theme.breaks.md]: {
@@ -69,10 +70,7 @@ const Home: React.SFC<IProps> = ({ classes }) => (
 	<div>
 		<Header>
 			<div className={classes.wrapper}>
-				<img
-					src="https://via.placeholder.com/280x280"
-					className={classes.logo}
-				/>
+				<img src={Logo} className={classes.logo} />
 				<Typography
 					className={classes.title}
 					component="h1"

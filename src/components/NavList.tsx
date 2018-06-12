@@ -59,7 +59,7 @@ interface IState {
 	open: boolean
 }
 class NestedList extends React.Component<IProps, IState> {
-	public state = { open: true }
+	public state = { open: false }
 
 	public handleClick = () => {
 		this.setState({ open: !this.state.open })
