@@ -9,6 +9,7 @@ import blue from '@material-ui/core/colors/blue'
 import Home from './routes/Home'
 import Euterpe from './routes/projects/Euterpe'
 import UprightBuilders from './routes/projects/UprightBuilders'
+import Resume from './routes/Resume'
 
 import injectSheet from 'react-jss'
 
@@ -56,6 +57,7 @@ class App extends React.Component<IProps> {
 									<div id="page-wrap">
 										<div className={classes.wrap}>
 											<Route path="/" exact={true} component={Home} />
+											<Route path="/resume" component={Resume} />
 											<Route
 												path="/projects/upright-builders"
 												component={UprightBuilders}

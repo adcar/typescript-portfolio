@@ -26,7 +26,12 @@ class PageLabel extends React.Component<IProps> {
 
 		return (
 			<div className={classes.root}>
-				<Typography variant="display3" color="inherit" align="center">
+				<Typography
+					variant="display3"
+					color="inherit"
+					align="center"
+					component="h1"
+				>
 					{title}
 				</Typography>
 			</div>
