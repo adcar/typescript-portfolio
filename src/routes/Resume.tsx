@@ -1,17 +1,23 @@
 import * as React from 'react'
 
+import Typography from '@material-ui/core/Typography'
 import injectSheet from 'react-jss'
 import PageLabel from '../components/PageLabel'
-import ProfilePhoto from '../img/profilePhoto.jpg'
 
 interface IProps {
 	classes: any
 }
 const styles = theme => ({
+	info: {
+		backgroundColor: 'green',
+		gridRow: '1 / end'
+	},
+	logo: {
+		borderRadius: '50%',
+		margin: '0 auto'
+	},
+	logoWrapper: {},
 	wrapper: {
-		display: 'grid',
-		gridTemplateColumns: '1fr 2fr',
-		gridTemplateRows: '1fr 1fr 1fr 1fr',
 		margin: '0 auto',
 		maxWidth: 800
 	}
@@ -21,12 +27,15 @@ const Resume: React.SFC<IProps> = ({ classes }) => (
 	<div>
 		<PageLabel title="Resume" />
 		<div className={classes.wrapper}>
-			<div>
-				<img src={ProfilePhoto} alt="Profile Photo" />
-
-				<h1>Alexander Cardosi</h1>
-				<h2>Web Developer</h2>
-			</div>
+			<Typography variant="display2" component="h2">
+				Skills
+			</Typography>
+			<Typography variant="display2" component="h2">
+				Experience
+			</Typography>
+			<Typography variant="display2" component="h2">
+				Education
+			</Typography>
 		</div>
 	</div>
 )

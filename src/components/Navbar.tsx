@@ -1,10 +1,10 @@
 import * as React from 'react'
 
 import Typography from '@material-ui/core/Typography'
+import MenuIcon from '@material-ui/icons/Menu'
 import { scaleRotate as Menu } from 'react-burger-menu'
 import injectSheet from 'react-jss'
 import { Link } from 'react-router-dom'
-import BurgerIcon from '../components/BurgerIcon'
 import NavList from '../components/NavList'
 
 const bmStyles = {
@@ -108,7 +108,7 @@ class Navbar extends React.Component<IProps, IState> {
 			<nav className={classes.navbar} id="nav">
 				<Menu
 					styles={bmStyles}
-					customBurgerIcon={<BurgerIcon />}
+					customBurgerIcon={<MenuIcon />}
 					pageWrapId={'page-wrap'}
 					outerContainerId={'outer-container'}
 					isOpen={isOpen}
