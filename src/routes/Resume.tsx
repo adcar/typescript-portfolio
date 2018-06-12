@@ -1,6 +1,9 @@
 import * as React from 'react'
 
 import Typography from '@material-ui/core/Typography'
+import EducationIcon from '@material-ui/icons/School'
+import ExperienceIcon from '@material-ui/icons/Layers'
+import SkillsIcon from '@material-ui/icons/Whatshot'
 import injectSheet from 'react-jss'
 import PageLabel from '../components/PageLabel'
 
@@ -8,6 +11,10 @@ interface IProps {
 	classes: any
 }
 const styles = theme => ({
+	icon: {
+		height: 40,
+		width: 40
+	},
 	info: {
 		backgroundColor: 'green',
 		gridRow: '1 / end'
@@ -28,13 +35,13 @@ const Resume: React.SFC<IProps> = ({ classes }) => (
 		<PageLabel title="Resume" />
 		<div className={classes.wrapper}>
 			<Typography variant="display2" component="h2">
-				Skills
+				<SkillsIcon className={classes.icon} /> Skills
 			</Typography>
 			<Typography variant="display2" component="h2">
-				Experience
+				<ExperienceIcon className={classes.icon} /> Experience
 			</Typography>
 			<Typography variant="display2" component="h2">
-				Education
+				<EducationIcon className={classes.icon} /> Education
 			</Typography>
 		</div>
 	</div>

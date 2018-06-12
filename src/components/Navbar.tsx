@@ -12,8 +12,8 @@ const bmStyles = {
 	bmBurgerButton: {
 		position: 'relative',
 
-		height: '36px',
-		width: '36px',
+		height: '48px',
+		width: '48px',
 		zIndex: '1'
 	},
 	bmCross: {
@@ -108,7 +108,7 @@ class Navbar extends React.Component<IProps, IState> {
 			<nav className={classes.navbar} id="nav">
 				<Menu
 					styles={bmStyles}
-					customBurgerIcon={<MenuIcon />}
+					customBurgerIcon={<MenuIcon viewBox="0 0 24 24" />}
 					pageWrapId={'page-wrap'}
 					outerContainerId={'outer-container'}
 					isOpen={isOpen}
