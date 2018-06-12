@@ -4,7 +4,7 @@ import injectSheet from 'react-jss'
 import PageLabel from '../../components/PageLabel'
 import Project from '../../components/Project'
 
-import headerImg from '../../img/uprightBuilders.jpg'
+import headerImg from '../../img/uprightBuilders.webp'
 interface IProps {
 	classes: any
 }

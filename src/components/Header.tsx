@@ -1,6 +1,6 @@
 import * as React from 'react'
 import injectSheet from 'react-jss'
-import bgImg from '../img/bgImg.jpg'
+import bgImg from '../img/bgImg.webp'
 const styles = theme => ({
 	root: {
 		alignItems: 'center',
