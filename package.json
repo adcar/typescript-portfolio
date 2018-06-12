@@ -8,7 +8,6 @@
 		"@material-ui/icons": "^1.1.0",
 		"@types/jss": "^9.5.3",
 		"@types/react-burger-menu": "^2.2.0",
-		"@types/react-router-dom": "^4.2.7",
 		"hex-rgba": "^1.0.2",
 		"react": "^16.4.0",
 		"react-burger-menu": "^2.5.0",

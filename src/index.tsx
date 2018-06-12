@@ -10,10 +10,11 @@ import { ThemeProvider } from 'react-jss'
 const theme = {
 	bg: '#4b6584',
 	bgTrans: '',
-	breakpoints: {
+	breaks: {
 		md: '@media (min-width: 720px)'
 	},
-	main: '#fc5c65',
+	main: '#2d98da',
+	secondary: '#eb3b5a',
 	spacing: {
 		unit: 20
 	}

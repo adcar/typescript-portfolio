@@ -78,10 +78,22 @@ const styles = (theme: any) => ({
 interface IProps {
 	classes: any
 }
+interface IState {
+	isOpen: boolean
+}
 
-class Navbar extends React.Component<IProps> {
+class Navbar extends React.Component<IProps, IState> {
+	public state = {
+		isOpen: false
+	}
+	public close = () => {
+		this.setState({
+			isOpen: false
+		})
+	}
 	public render() {
 		const { classes } = this.props
+		const { isOpen } = this.state
 		return (
 			<div className={classes.navbar}>
 				<Menu
@@ -89,8 +101,9 @@ class Navbar extends React.Component<IProps> {
 					customBurgerIcon={<BurgerIcon />}
 					pageWrapId={'page-wrap'}
 					outerContainerId={'outer-container'}
+					isOpen={isOpen}
 				>
-					<NavList />
+					<NavList close={this.close} />
 				</Menu>
 				<Typography variant="headline">Alexander Cardosi</Typography>
 			</div>

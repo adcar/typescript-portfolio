@@ -52,6 +52,7 @@ const styles = theme => ({
 })
 interface IProps {
 	classes: any
+	close: any
 }
 interface IState {
 	open: boolean
@@ -61,6 +62,9 @@ class NestedList extends React.Component<IProps, IState> {
 
 	public handleClick = () => {
 		this.setState({ open: !this.state.open })
+	}
+	public handleClose = () => {
+		this.props.close()
 	}
 
 	public render() {
@@ -86,7 +90,8 @@ class NestedList extends React.Component<IProps, IState> {
 							<ListItem button={true} className={classes.item}>
 								<Link
 									className={[classes.link, classes.nested].join(' ')}
-									to="/test"
+									to="/projects/upright-builders"
+									onClick={this.handleClose}
 								>
 									<ListItemIcon>
 										<BuildIcon />
@@ -97,7 +102,8 @@ class NestedList extends React.Component<IProps, IState> {
 							<ListItem button={true} className={classes.item}>
 								<Link
 									className={[classes.link, classes.nested].join(' ')}
-									to="/test"
+									to="/projects/euterpe"
+									onClick={this.handleClose}
 								>
 									<ListItemIcon>
 										<MusicNoteIcon />
@@ -110,6 +116,7 @@ class NestedList extends React.Component<IProps, IState> {
 								<Link
 									className={[classes.link, classes.nested].join(' ')}
 									to="/test"
+									onClick={this.handleClose}
 								>
 									<ListItemIcon>
 										<WebIcon />
@@ -120,7 +127,11 @@ class NestedList extends React.Component<IProps, IState> {
 						</List>
 					</Collapse>
 					<ListItem button={true} className={classes.item}>
-						<Link className={classes.link} to="/resume">
+						<Link
+							className={classes.link}
+							to="/resume"
+							onClick={this.handleClose}
+						>
 							<ListItemIcon>
 								<ViewQuiltIcon />
 							</ListItemIcon>
@@ -128,7 +139,11 @@ class NestedList extends React.Component<IProps, IState> {
 						</Link>
 					</ListItem>
 					<ListItem button={true} className={classes.item}>
-						<Link className={classes.link} to="/test">
+						<Link
+							className={classes.link}
+							to="/test"
+							onClick={this.handleClose}
+						>
 							<ListItemIcon>
 								<InfoIcon />
 							</ListItemIcon>

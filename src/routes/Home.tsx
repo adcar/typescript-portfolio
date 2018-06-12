@@ -29,17 +29,34 @@ const styles = theme => ({
 		textDecoration: 'none'
 	},
 	logo: {
+		[theme.breaks.md]: {
+			height: 280,
+			width: 280
+		},
 		borderRadius: '50%',
-		marginBottom: 20
+		height: 200,
+		marginBottom: 20,
+		width: 200
 	},
 	resumeBtn: {
 		'&:hover': {
-			backgroundColor: '#eb3b5a'
+			backgroundColor: theme.secondary
 		},
 		backgroundColor: theme.main,
 		marginRight: theme.spacing.unit
 	},
-
+	subtitle: {
+		[theme.breaks.md]: {
+			fontSize: 34
+		},
+		fontSize: 20
+	},
+	title: {
+		[theme.breaks.md]: {
+			fontSize: 56
+		},
+		fontSize: 30
+	},
 	wrapper: {
 		alignItems: 'center',
 		display: 'flex',
@@ -47,54 +64,56 @@ const styles = theme => ({
 		justifyContent: 'center'
 	}
 })
-class Home extends React.Component<IProps> {
-	public render() {
-		const { classes } = this.props
-		return (
-			<div>
-				<Header>
-					<div className={classes.wrapper}>
-						<img
-							src="https://via.placeholder.com/280x280"
-							className={classes.logo}
-						/>
-						<Typography
-							component="h1"
-							variant="display3"
-							color="inherit"
-							align="center"
-						>
-							Alexander Cardosi
-						</Typography>
-						<Typography variant="display1" component="span" align="center">
-							Web Developer
-						</Typography>
-						<div className={classes.buttons}>
-							<Link to="/resume" className={classes.link}>
-								<Button
-									variant="contained"
-									color="primary"
-									className={classes.resumeBtn}
-								>
-									Resume
-								</Button>
-							</Link>
 
-							<Link to="/about-me" className={classes.link}>
-								<Button
-									variant="contained"
-									color="primary"
-									className={classes.aboutBtn}
-								>
-									About
-								</Button>
-							</Link>
-						</div>
-					</div>
-				</Header>
+const Home: React.SFC<IProps> = ({ classes }) => (
+	<div>
+		<Header>
+			<div className={classes.wrapper}>
+				<img
+					src="https://via.placeholder.com/280x280"
+					className={classes.logo}
+				/>
+				<Typography
+					className={classes.title}
+					component="h1"
+					variant="display3"
+					color="inherit"
+					align="center"
+				>
+					Alexander Cardosi
+				</Typography>
+				<Typography
+					variant="display1"
+					component="span"
+					align="center"
+					className={classes.subtitle}
+				>
+					Web Developer
+				</Typography>
+				<div className={classes.buttons}>
+					<Link to="/resume" className={classes.link}>
+						<Button
+							variant="contained"
+							color="primary"
+							className={classes.resumeBtn}
+						>
+							Resume
+						</Button>
+					</Link>
+
+					<Link to="/about-me" className={classes.link}>
+						<Button
+							variant="contained"
+							color="primary"
+							className={classes.aboutBtn}
+						>
+							About
+						</Button>
+					</Link>
+				</div>
 			</div>
-		)
-	}
-}
+		</Header>
+	</div>
+)
 
 export default injectSheet(styles)(Home)
