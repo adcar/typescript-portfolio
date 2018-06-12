@@ -105,7 +105,7 @@ class Navbar extends React.Component<IProps, IState> {
 		const { classes } = this.props
 		const { isOpen } = this.state
 		return (
-			<div className={classes.navbar}>
+			<nav className={classes.navbar} id="nav">
 				<Menu
 					styles={bmStyles}
 					customBurgerIcon={<BurgerIcon />}
@@ -120,7 +120,7 @@ class Navbar extends React.Component<IProps, IState> {
 						Alexander Cardosi
 					</Link>
 				</Typography>
-			</div>
+			</nav>
 		)
 	}
 }
