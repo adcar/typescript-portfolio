@@ -13,8 +13,8 @@ const theme = {
 	breaks: {
 		md: '@media (min-width: 720px)'
 	},
-	main: '#e74c3c',
-	secondary: '#c0392b',
+	main: '#eb3b5a',
+	secondary: '#fc5c65',
 	spacing: {
 		unit: 20
 	}

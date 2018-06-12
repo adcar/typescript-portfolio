@@ -41,7 +41,7 @@ const styles = theme => ({
 	},
 
 	nested: {
-		paddingLeft: 34
+		paddingLeft: 50
 	},
 
 	root: {
