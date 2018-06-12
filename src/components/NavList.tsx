@@ -5,6 +5,7 @@ import AssignmentIcon from '@material-ui/icons/Assignment'
 import BuildIcon from '@material-ui/icons/Build'
 import ExpandLess from '@material-ui/icons/ExpandLess'
 import ExpandMore from '@material-ui/icons/ExpandMore'
+import HomeIcon from '@material-ui/icons/Home'
 import InfoIcon from '@material-ui/icons/Info'
 import MusicNoteIcon from '@material-ui/icons/MusicNote'
 import ViewQuiltIcon from '@material-ui/icons/ViewQuilt'
@@ -78,6 +79,14 @@ class NestedList extends React.Component<IProps, IState> {
 						<ListSubheader component="div">Alexander Cardosi</ListSubheader>
 					}
 				>
+					<ListItem button={true} className={classes.item}>
+						<Link className={classes.link} to="/" onClick={this.handleClose}>
+							<ListItemIcon>
+								<HomeIcon />
+							</ListItemIcon>
+							<ListItemText inset={true} primary="Home" />
+						</Link>
+					</ListItem>
 					<ListItem button={true} onClick={this.handleClick}>
 						<ListItemIcon>
 							<AssignmentIcon />

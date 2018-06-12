@@ -1,7 +1,9 @@
-import Typography from '@material-ui/core/Typography'
 import * as React from 'react'
+
+import Typography from '@material-ui/core/Typography'
 import { scaleRotate as Menu } from 'react-burger-menu'
 import injectSheet from 'react-jss'
+import { Link } from 'react-router-dom'
 import BurgerIcon from '../components/BurgerIcon'
 import NavList from '../components/NavList'
 
@@ -59,6 +61,13 @@ const bmStyles = {
 	}
 }
 const styles = (theme: any) => ({
+	link: {
+		'&:hover': {
+			textDecoration: 'underline'
+		},
+		color: 'inherit',
+		textDecoration: 'none'
+	},
 	navbar: {
 		alignItems: 'center',
 		backgroundColor: theme.main,
@@ -106,7 +115,11 @@ class Navbar extends React.Component<IProps, IState> {
 				>
 					<NavList close={this.close} />
 				</Menu>
-				<Typography variant="headline">Alexander Cardosi</Typography>
+				<Typography variant="headline">
+					<Link to="/" className={classes.link}>
+						Alexander Cardosi
+					</Link>
+				</Typography>
 			</div>
 		)
 	}
