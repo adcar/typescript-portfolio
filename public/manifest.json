@@ -2,7 +2,7 @@
 	"name": "Alexander Cardosi Portfolio",
 	"short_name": "Portfolio",
 	"theme_color": "#eb3b5a",
-	"background_color": "#2c3e50",
+	"background_color": "#34495e",
 	"display": "minimal-ui",
 	"scope": "/",
 	"start_url": "/",

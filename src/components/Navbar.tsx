@@ -27,7 +27,7 @@ const bmStyles = {
 		color: 'white'
 	},
 	bmMenu: {
-		background: '#2c3e50',
+		background: '#34495e',
 		fontSize: '1.15em',
 
 		zIndex: '2'

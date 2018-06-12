@@ -1,0 +1,16 @@
+:root {
+	--main: #eb3b5a;
+}
+
+body::-webkit-scrollbar {
+	width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: var(--main);
+	outline: 0;
+}
+
+*::selection {
+	background: #f59196;
+}

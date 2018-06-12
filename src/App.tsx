@@ -4,7 +4,6 @@ import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import amber from '@material-ui/core/colors/amber'
-import blue from '@material-ui/core/colors/blue'
 
 import Home from './routes/Home'
 import Euterpe from './routes/projects/Euterpe'
@@ -23,7 +22,9 @@ const theme = createMuiTheme({
 		background: {
 			default: 'white'
 		},
-		primary: blue,
+		primary: {
+			main: '#eb3b5a'
+		},
 		secondary: amber,
 		type: 'dark'
 	}
