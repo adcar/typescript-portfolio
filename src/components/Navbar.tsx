@@ -15,7 +15,7 @@ const bmStyles = {
 		zIndex: '1'
 	},
 	bmCross: {
-		background: '#bdc3c7'
+		background: 'white'
 	},
 	bmCrossButton: {
 		height: '36px',
@@ -25,7 +25,7 @@ const bmStyles = {
 		color: 'white'
 	},
 	bmMenu: {
-		background: '#4b6584',
+		background: '#2c3e50',
 		fontSize: '1.15em',
 
 		zIndex: '2'
@@ -77,6 +77,7 @@ const styles = (theme: any) => ({
 })
 interface IProps {
 	classes: any
+	theme: any
 }
 interface IState {
 	isOpen: boolean

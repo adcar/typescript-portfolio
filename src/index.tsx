@@ -8,13 +8,13 @@ import hexToRgba from 'hex-rgba'
 import { ThemeProvider } from 'react-jss'
 
 const theme = {
-	bg: '#4b6584',
+	bg: '#34495e',
 	bgTrans: '',
 	breaks: {
 		md: '@media (min-width: 720px)'
 	},
-	main: '#2d98da',
-	secondary: '#eb3b5a',
+	main: '#e74c3c',
+	secondary: '#c0392b',
 	spacing: {
 		unit: 20
 	}
