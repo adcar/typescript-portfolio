@@ -7,6 +7,8 @@ import EducationIcon from '@material-ui/icons/School'
 import AwardsIcon from '@material-ui/icons/Star'
 import SkillsIcon from '@material-ui/icons/Whatshot'
 import injectSheet from 'react-jss'
+
+import EducationTimeline from '../components/EducationTimeline'
 import PageLabel from '../components/PageLabel'
 import Skills from '../components/Skills'
 import Works from '../components/Works'
@@ -57,6 +59,8 @@ const Resume: React.SFC<IProps> = ({ classes }) => (
 			<Typography variant="display2" component="h2" color="inherit">
 				<EducationIcon className={classes.icon} /> Education
 			</Typography>
+			<EducationTimeline />
+
 			<Typography variant="display2" component="h2" color="inherit">
 				<AwardsIcon className={classes.icon} /> Awards
 			</Typography>
