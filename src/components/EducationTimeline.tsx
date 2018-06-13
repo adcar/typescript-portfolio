@@ -48,7 +48,7 @@ const EducationTimeline: React.SFC<IProps> = ({ classes }) => (
 				bubbleStyle={custom.bubble}
 				contentStyle={custom.content}
 				title="Pre-Tech 2"
-				subtitle="2014-2015"
+				subtitle="2015-2016"
 			>
 				I was in this program for one year which prepared me for my upcoming
 				technical program.
@@ -60,7 +60,7 @@ const EducationTimeline: React.SFC<IProps> = ({ classes }) => (
 				bubbleStyle={custom.bubble}
 				contentStyle={custom.content}
 				title="Computer Animation and Web Design"
-				subtitle="2015-2018"
+				subtitle="2016-2018"
 			>
 				After attending this program for two years, I learned the fundementals
 				of web design and front end development.
