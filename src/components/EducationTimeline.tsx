@@ -28,13 +28,13 @@ const custom = {
 		backgroundColor: '#eb3b5a',
 		boxShadow: '0'
 	},
-	title: {
-		color: 'white',
-		marginLeft: 7
-	},
 	subtitle: {
 		color: 'white',
 		marginLeft: 10
+	},
+	title: {
+		color: 'white',
+		marginLeft: 7
 	}
 }
 

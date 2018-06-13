@@ -12,6 +12,7 @@ import EducationTimeline from '../components/EducationTimeline'
 import PageLabel from '../components/PageLabel'
 import Skills from '../components/Skills'
 import Works from '../components/Works'
+
 interface IProps {
 	classes: any
 }
