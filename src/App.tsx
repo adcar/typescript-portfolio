@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import amber from '@material-ui/core/colors/amber'
 
+import AboutMe from './routes/AboutMe'
 import Home from './routes/Home'
 import Euterpe from './routes/projects/Euterpe'
 import UprightBuilders from './routes/projects/UprightBuilders'
@@ -59,6 +60,7 @@ class App extends React.Component<IProps> {
 										<div className={classes.wrap}>
 											<Route path="/" exact={true} component={Home} />
 											<Route path="/resume" component={Resume} />
+											<Route path="/about-me" component={AboutMe} />
 											<Route
 												path="/projects/upright-builders"
 												component={UprightBuilders}

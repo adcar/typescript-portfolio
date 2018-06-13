@@ -150,7 +150,7 @@ class NestedList extends React.Component<IProps, IState> {
 					<ListItem button={true} className={classes.item}>
 						<Link
 							className={classes.link}
-							to="/test"
+							to="/about-me"
 							onClick={this.handleClose}
 						>
 							<ListItemIcon>
