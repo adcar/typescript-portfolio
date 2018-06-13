@@ -96,6 +96,14 @@ const AboutMe: React.SFC<IProps> = ({ classes }) => (
 					<a href="https://www.freepik.com" className={classes.link}>
 						FreePik
 					</a>
+					Header Photo by{' '}
+					<a href="https://unsplash.com/@laurenmancke" className={classes.link}>
+						Lauren Mancke
+					</a>{' '}
+					on{' '}
+					<a href="https://unsplash.com/" className={classes.link}>
+						Unsplash
+					</a>.
 				</Typography>
 			</div>
 		</div>
