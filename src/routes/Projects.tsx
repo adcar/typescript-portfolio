@@ -44,8 +44,9 @@ const styles = theme => ({
 
 		display: 'grid',
 		gridGap: '30px',
-		gridTemplateColumns: 'repeat(auto-fill, minmax(400px, 1fr))',
-		gridTemplateRows: 'repeat(2, minmax(270px, 1fr))'
+		gridTemplateColumns: 'repeat(auto-fill, 400px)',
+		gridTemplateRows: 'repeat(2, minmax(270px, 1fr))',
+		justifyContent: 'center'
 	}
 })
 interface IProps {

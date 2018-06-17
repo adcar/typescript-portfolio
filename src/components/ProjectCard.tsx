@@ -17,8 +17,8 @@ const styles = theme => ({
 	root: {
 		color: 'white',
 		cursor: 'pointer',
-		maxWidth: 400,
-		minHeight: 270
+		height: 270,
+		maxWidth: 400
 	},
 	title: {
 		backgroundColor: theme.main,
