@@ -11,6 +11,7 @@
 		"hex-rgba": "^1.0.2",
 		"react": "^16.4.0",
 		"react-burger-menu": "^2.5.0",
+		"react-card-flip": "^0.2.1",
 		"react-collapsible": "^2.2.0",
 		"react-dom": "^16.4.0",
 		"react-event-timeline": "^1.5.4",
