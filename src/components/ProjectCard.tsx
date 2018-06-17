@@ -8,7 +8,10 @@ import injectSheet from 'react-jss'
 const styles = theme => ({
 	back: {
 		backgroundColor: theme.main,
-		height: 200,
+		height: 140,
+		[theme.breaks.xs]: {
+			height: 200
+		},
 		padding: 30
 	},
 	projectImage: {
