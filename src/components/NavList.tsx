@@ -1,24 +1,19 @@
-import Collapse from '@material-ui/core/Collapse'
 import * as React from 'react'
 
 import AssignmentIcon from '@material-ui/icons/Assignment'
-import BuildIcon from '@material-ui/icons/Build'
-import ExpandLess from '@material-ui/icons/ExpandLess'
-import ExpandMore from '@material-ui/icons/ExpandMore'
 import HomeIcon from '@material-ui/icons/Home'
 import InfoIcon from '@material-ui/icons/Info'
-import MusicNoteIcon from '@material-ui/icons/MusicNote'
-import ViewQuiltIcon from '@material-ui/icons/ViewQuilt'
-import WebIcon from '@material-ui/icons/Web'
 
 import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
 import ListItemIcon from '@material-ui/core/ListItemIcon'
+import ListItemText from '@material-ui/core/ListItemText'
+import ListSubheader from '@material-ui/core/ListSubheader'
+
 import injectSheet from 'react-jss'
 import { Link } from 'react-router-dom'
 
-import ListItemText from '@material-ui/core/ListItemText'
-import ListSubheader from '@material-ui/core/ListSubheader'
+import ViewQuiltIcon from '@material-ui/icons/ViewQuilt'
 
 const styles = theme => ({
 	item: {
@@ -92,55 +87,17 @@ class NestedList extends React.Component<IProps, IState> {
 						onClick={this.handleClick}
 						className={classes.item}
 					>
-						<div className={classes.link}>
+						<Link
+							className={classes.link}
+							to="/projects"
+							onClick={this.handleClose}
+						>
 							<ListItemIcon>
 								<AssignmentIcon />
 							</ListItemIcon>
 							<ListItemText inset={true} primary="Projects" />
-							{this.state.open ? <ExpandLess /> : <ExpandMore />}
-						</div>
+						</Link>
 					</ListItem>
-					<Collapse in={this.state.open} timeout="auto" unmountOnExit={true}>
-						<List component="div">
-							<ListItem button={true} className={classes.item}>
-								<Link
-									className={[classes.link, classes.nested].join(' ')}
-									to="/projects/upright-builders"
-									onClick={this.handleClose}
-								>
-									<ListItemIcon>
-										<BuildIcon />
-									</ListItemIcon>
-									<ListItemText inset={true} primary="Upright Builders" />
-								</Link>
-							</ListItem>
-							<ListItem button={true} className={classes.item}>
-								<Link
-									className={[classes.link, classes.nested].join(' ')}
-									to="/projects/euterpe"
-									onClick={this.handleClose}
-								>
-									<ListItemIcon>
-										<MusicNoteIcon />
-									</ListItemIcon>
-									<ListItemText inset={true} primary="Euterpe" />
-								</Link>
-							</ListItem>
-
-							<ListItem button={true} className={classes.item}>
-								<Link
-									className={[classes.link, classes.nested].join(' ')}
-									to="/test"
-									onClick={this.handleClose}
-								>
-									<ListItemIcon>
-										<WebIcon />
-									</ListItemIcon>
-									<ListItemText inset={true} primary="Portfolio" />
-								</Link>
-							</ListItem>
-						</List>
-					</Collapse>
 					<ListItem button={true} className={classes.item}>
 						<Link
 							className={classes.link}

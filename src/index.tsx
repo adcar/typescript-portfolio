@@ -11,7 +11,8 @@ const theme = {
 	bg: '#34495e',
 	bgTrans: '',
 	breaks: {
-		md: '@media (min-width: 720px)'
+		md: '@media (min-width: 720px)',
+		sm: '@media (min-width: 620px)'
 	},
 	main: '#eb3b5a',
 	secondary: '#fc5c65',

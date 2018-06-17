@@ -45,7 +45,7 @@ const AboutMe: React.SFC<IProps> = ({ classes }) => (
 		<div className={classes.wrapper}>
 			<div>
 				<img className={classes.image} src={ProfilePhoto} alt="Profile Photo" />
-				<Typography variant="display2" color="inherit">
+				<Typography variant="display1" color="inherit">
 					Introduction
 				</Typography>
 				<Typography>
@@ -59,7 +59,7 @@ const AboutMe: React.SFC<IProps> = ({ classes }) => (
 			</div>
 
 			<div className={classes.section}>
-				<Typography variant="display2" color="inherit">
+				<Typography variant="display1" color="inherit">
 					Interests
 				</Typography>
 				<Typography>
@@ -72,7 +72,7 @@ const AboutMe: React.SFC<IProps> = ({ classes }) => (
 				</Typography>
 			</div>
 			<div className={classes.section}>
-				<Typography variant="display2" color="inherit">
+				<Typography variant="display1" color="inherit">
 					Credits
 				</Typography>
 				<Typography>
