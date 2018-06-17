@@ -87,12 +87,18 @@ class NestedList extends React.Component<IProps, IState> {
 							<ListItemText inset={true} primary="Home" />
 						</Link>
 					</ListItem>
-					<ListItem button={true} onClick={this.handleClick}>
-						<ListItemIcon>
-							<AssignmentIcon />
-						</ListItemIcon>
-						<ListItemText inset={true} primary="Projects" />
-						{this.state.open ? <ExpandLess /> : <ExpandMore />}
+					<ListItem
+						button={true}
+						onClick={this.handleClick}
+						className={classes.item}
+					>
+						<div className={classes.link}>
+							<ListItemIcon>
+								<AssignmentIcon />
+							</ListItemIcon>
+							<ListItemText inset={true} primary="Projects" />
+							{this.state.open ? <ExpandLess /> : <ExpandMore />}
+						</div>
 					</ListItem>
 					<Collapse in={this.state.open} timeout="auto" unmountOnExit={true}>
 						<List component="div">
