@@ -40,12 +40,14 @@ const styles = theme => ({
 	wrapper: {
 		margin: '0 auto',
 		maxWidth: 1000,
-		padding: 32,
+		padding: '32px 0',
 
 		display: 'grid',
 		gridGap: '30px',
-		gridTemplateColumns: 'repeat(auto-fill, 400px)',
-		gridTemplateRows: 'repeat(2, minmax(270px, 1fr))',
+		gridTemplateColumns: 'repeat(auto-fill, 280px)',
+		[theme.breaks.xs]: {
+			gridTemplateColumns: 'repeat(auto-fill, 400px)'
+		},
 		justifyContent: 'center'
 	}
 })

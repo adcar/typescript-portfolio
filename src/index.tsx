@@ -12,7 +12,8 @@ const theme = {
 	bgTrans: '',
 	breaks: {
 		md: '@media (min-width: 720px)',
-		sm: '@media (min-width: 620px)'
+		sm: '@media (min-width: 620px)',
+		xs: '@media (min-width: 440px)'
 	},
 	main: '#eb3b5a',
 	secondary: '#fc5c65',

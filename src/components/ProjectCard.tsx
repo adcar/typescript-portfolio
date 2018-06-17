@@ -12,13 +12,18 @@ const styles = theme => ({
 		padding: 30
 	},
 	projectImage: {
-		width: '100%'
+		width: '100%',
+		height: 'auto'
 	},
 	root: {
 		color: 'white',
 		cursor: 'pointer',
-		height: 270,
-		maxWidth: 400
+		height: 210,
+		maxWidth: 280,
+		[theme.breaks.xs]: {
+			maxWidth: 400,
+			height: 270
+		}
 	},
 	title: {
 		backgroundColor: theme.main,
