@@ -31,7 +31,7 @@ const styles = theme => ({
 		}
 	},
 	title: {
-		backgroundColor: theme.main,
+		backgroundColor: theme.secondary,
 		padding: '15px 0'
 	}
 })
