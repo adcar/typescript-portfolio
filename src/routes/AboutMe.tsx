@@ -45,9 +45,7 @@ const AboutMe: React.SFC<IProps> = ({ classes }) => (
 		<div className={classes.wrapper}>
 			<div>
 				<img className={classes.image} src={ProfilePhoto} alt="Profile Photo" />
-				<Typography variant="display1" color="inherit">
-					Introduction
-				</Typography>
+				<Typography variant="display1">Introduction</Typography>
 				<Typography>
 					Hi, I'm Alexander Cardosi, a web developer from Colchester, Vermont. I
 					have for front end design and development and love learning new
@@ -59,9 +57,7 @@ const AboutMe: React.SFC<IProps> = ({ classes }) => (
 			</div>
 
 			<div className={classes.section}>
-				<Typography variant="display1" color="inherit">
-					Interests
-				</Typography>
+				<Typography variant="display1">Interests</Typography>
 				<Typography>
 					I love creating small projects on my free time, and learning cool new
 					technologies. GNU / Linux is my preferred operating system, and I
@@ -72,9 +68,7 @@ const AboutMe: React.SFC<IProps> = ({ classes }) => (
 				</Typography>
 			</div>
 			<div className={classes.section}>
-				<Typography variant="display1" color="inherit">
-					Credits
-				</Typography>
+				<Typography variant="display1">Credits</Typography>
 				<Typography>
 					This website was created with{' '}
 					<a href="https://reactjs.org" className={classes.link}>

@@ -13,7 +13,8 @@ interface IProps {
 const styles = theme => ({
 	aboutBtn: {
 		'&:hover': {
-			backgroundColor: '#d1d8e0'
+			backgroundColor: theme.secondary,
+			color: 'white'
 		},
 		backgroundColor: 'white',
 		color: 'black',
@@ -43,6 +44,7 @@ const styles = theme => ({
 			backgroundColor: theme.secondary
 		},
 		backgroundColor: theme.main,
+		color: 'white',
 		marginRight: theme.spacing.unit
 	},
 	subtitle: {
@@ -75,7 +77,6 @@ const Home: React.SFC<IProps> = ({ classes }) => (
 					className={classes.title}
 					component="h1"
 					variant="display3"
-					color="inherit"
 					align="center"
 				>
 					Alexander Cardosi
@@ -90,11 +91,7 @@ const Home: React.SFC<IProps> = ({ classes }) => (
 				</Typography>
 				<div className={classes.buttons}>
 					<Link to="/resume" className={classes.link}>
-						<Button
-							variant="contained"
-							color="primary"
-							className={classes.resumeBtn}
-						>
+						<Button variant="contained" className={classes.resumeBtn}>
 							Resume
 						</Button>
 					</Link>

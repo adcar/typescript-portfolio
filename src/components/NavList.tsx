@@ -16,6 +16,9 @@ import { Link } from 'react-router-dom'
 import ViewQuiltIcon from '@material-ui/icons/ViewQuilt'
 
 const styles = theme => ({
+	icon: {
+		color: 'white'
+	},
 	item: {
 		padding: 0,
 
@@ -23,6 +26,7 @@ const styles = theme => ({
 		width: '100%'
 	},
 	link: {
+		color: 'white',
 		height: '100%',
 		width: '100%',
 
@@ -34,7 +38,6 @@ const styles = theme => ({
 		paddingRight: 24,
 		paddingTop: 12
 	},
-
 	nested: {
 		paddingLeft: 50
 	},
@@ -71,15 +74,21 @@ class NestedList extends React.Component<IProps, IState> {
 				<List
 					component="nav"
 					subheader={
-						<ListSubheader component="div">Alexander Cardosi</ListSubheader>
+						<ListSubheader component="div" color="inherit">
+							Alexander Cardosi
+						</ListSubheader>
 					}
 				>
 					<ListItem button={true} className={classes.item}>
 						<Link className={classes.link} to="/" onClick={this.handleClose}>
 							<ListItemIcon>
-								<HomeIcon />
+								<HomeIcon className={classes.icon} />
 							</ListItemIcon>
-							<ListItemText inset={true} primary="Home" />
+							<ListItemText
+								inset={true}
+								primary="Home"
+								disableTypography={true}
+							/>
 						</Link>
 					</ListItem>
 					<ListItem
@@ -93,9 +102,13 @@ class NestedList extends React.Component<IProps, IState> {
 							onClick={this.handleClose}
 						>
 							<ListItemIcon>
-								<AssignmentIcon />
+								<AssignmentIcon className={classes.icon} />
 							</ListItemIcon>
-							<ListItemText inset={true} primary="Projects" />
+							<ListItemText
+								disableTypography={true}
+								inset={true}
+								primary="Projects"
+							/>
 						</Link>
 					</ListItem>
 					<ListItem button={true} className={classes.item}>
@@ -105,9 +118,13 @@ class NestedList extends React.Component<IProps, IState> {
 							onClick={this.handleClose}
 						>
 							<ListItemIcon>
-								<ViewQuiltIcon />
+								<ViewQuiltIcon className={classes.icon} />
 							</ListItemIcon>
-							<ListItemText inset={true} primary="Resume" />
+							<ListItemText
+								disableTypography={true}
+								inset={true}
+								primary="Resume"
+							/>
 						</Link>
 					</ListItem>
 					<ListItem button={true} className={classes.item}>
@@ -117,9 +134,13 @@ class NestedList extends React.Component<IProps, IState> {
 							onClick={this.handleClose}
 						>
 							<ListItemIcon>
-								<InfoIcon />
+								<InfoIcon className={classes.icon} />
 							</ListItemIcon>
-							<ListItemText inset={true} primary="About Me" />
+							<ListItemText
+								disableTypography={true}
+								inset={true}
+								primary="About Me"
+							/>
 						</Link>
 					</ListItem>
 				</List>

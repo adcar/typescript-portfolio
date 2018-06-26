@@ -57,12 +57,7 @@ interface IProps {
 const Projects: React.SFC<IProps> = ({ classes }) => (
 	<div>
 		<PageLabel title="Projects" />
-		<Typography
-			variant="display1"
-			align="center"
-			color="inherit"
-			className={classes.title}
-		>
+		<Typography variant="display1" align="center" className={classes.title}>
 			Click on Any Project!
 		</Typography>
 		<div className={classes.wrapper}>

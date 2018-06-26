@@ -16,8 +16,9 @@ const styles = theme => ({
 const custom = {
 	bubble: {
 		alignItems: 'center',
-		backgroundColor: '#eb3b5a',
+		backgroundColor: '#263238',
 		border: 'none',
+
 		display: 'flex',
 		height: 50,
 		justifyContent: 'center',
@@ -25,8 +26,7 @@ const custom = {
 		width: 50
 	},
 	content: {
-		backgroundColor: '#eb3b5a',
-		boxShadow: '0'
+		backgroundColor: '#263238'
 	},
 	subtitle: {
 		color: 'white',

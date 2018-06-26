@@ -24,7 +24,7 @@ const styles = theme => ({
 const Awards: React.SFC<IProps> = ({ classes }) => (
 	<div className={classes.root}>
 		<div className={classes.item}>
-			<Typography variant="title" color="inherit" gutterBottom={true}>
+			<Typography variant="title" gutterBottom={true}>
 				<SkillsStates viewBox="0 0 181.594 181.593" /> SkillsUSA Nationals
 			</Typography>
 			<Typography>
@@ -33,7 +33,7 @@ const Awards: React.SFC<IProps> = ({ classes }) => (
 			</Typography>
 		</div>
 		<div className={classes.item}>
-			<Typography variant="title" color="inherit" gutterBottom={true}>
+			<Typography variant="title" gutterBottom={true}>
 				<SkillsUSA viewBox="0 0 493.584 493.584" /> SkillsUSA States
 			</Typography>
 			<Typography>
@@ -42,7 +42,7 @@ const Awards: React.SFC<IProps> = ({ classes }) => (
 			</Typography>
 		</div>
 		<div className={classes.item}>
-			<Typography variant="title" color="inherit" gutterBottom={true}>
+			<Typography variant="title" gutterBottom={true}>
 				<NTHS viewBox="0 0 31.771 31.771" /> National Technical Honor Society
 			</Typography>
 			<Typography>

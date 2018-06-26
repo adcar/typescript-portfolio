@@ -8,6 +8,7 @@ import injectSheet from 'react-jss'
 const styles = theme => ({
 	back: {
 		backgroundColor: theme.main,
+		boxShadow: theme.shadow,
 		height: 140,
 		[theme.breaks.xs]: {
 			height: 200
@@ -15,8 +16,9 @@ const styles = theme => ({
 		padding: 30
 	},
 	projectImage: {
-		width: '100%',
-		height: 'auto'
+		boxShadow: theme.shadow,
+		height: 'auto',
+		width: '100%'
 	},
 	root: {
 		color: 'white',
@@ -24,8 +26,8 @@ const styles = theme => ({
 		height: 210,
 		maxWidth: 280,
 		[theme.breaks.xs]: {
-			maxWidth: 400,
-			height: 270
+			height: 270,
+			maxWidth: 400
 		}
 	},
 	title: {
@@ -63,9 +65,9 @@ class ProjectCard extends React.Component<IProps, IState> {
 			<div className={classes.root} onClick={this.handleClick}>
 				<Typography
 					variant="display1"
-					color="inherit"
 					align="center"
 					className={classes.title}
+					color="inherit"
 				>
 					{title}
 				</Typography>

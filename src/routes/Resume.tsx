@@ -20,7 +20,7 @@ interface IProps {
 
 const styles = theme => ({
 	icon: {
-		color: theme.main,
+		color: theme.secondary,
 		height: 40,
 		width: 40
 	},
@@ -51,42 +51,22 @@ const Resume: React.SFC<IProps> = ({ classes }) => (
 	<div>
 		<PageLabel title="Resume" />
 		<div className={classes.wrapper}>
-			<Typography
-				variant="display2"
-				component="h2"
-				color="inherit"
-				className={classes.title}
-			>
+			<Typography variant="display2" component="h2" className={classes.title}>
 				<SkillsIcon className={classes.icon} /> Skills
 			</Typography>
 			<Skills />
 
-			<Typography
-				variant="display2"
-				component="h2"
-				color="inherit"
-				className={classes.title}
-			>
+			<Typography variant="display2" component="h2" className={classes.title}>
 				<ExperienceIcon className={classes.icon} /> Experience
 			</Typography>
 			<Works />
 
-			<Typography
-				variant="display2"
-				component="h2"
-				color="inherit"
-				className={classes.title}
-			>
+			<Typography variant="display2" component="h2" className={classes.title}>
 				<EducationIcon className={classes.icon} /> Education
 			</Typography>
 			<EducationTimeline />
 
-			<Typography
-				variant="display2"
-				component="h2"
-				color="inherit"
-				className={classes.title}
-			>
+			<Typography variant="display2" component="h2" className={classes.title}>
 				<AwardsIcon className={classes.icon} /> Awards
 			</Typography>
 			<Awards />
