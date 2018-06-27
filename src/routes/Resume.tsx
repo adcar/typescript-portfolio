@@ -1,13 +1,10 @@
 import * as React from 'react'
 
 import Typography from '@material-ui/core/Typography'
-
-import ExperienceIcon from '@material-ui/icons/Layers'
 import EducationIcon from '@material-ui/icons/School'
 import AwardsIcon from '@material-ui/icons/Star'
 import SkillsIcon from '@material-ui/icons/Whatshot'
 import injectSheet from 'react-jss'
-import { Link } from 'react-router-dom'
 import Awards from '../components/Awards'
 import EducationTimeline from '../components/EducationTimeline'
 import PageLabel from '../components/PageLabel'
@@ -54,19 +51,6 @@ const Resume: React.SFC<IProps> = ({ classes }) => (
 				<SkillsIcon className={classes.icon} /> Skills
 			</Typography>
 			<Skills />
-
-			<Typography
-				variant="display2"
-				component="h2"
-				className={classes.title}
-				gutterBottom={true}
-			>
-				<ExperienceIcon className={classes.icon} /> Experience
-			</Typography>
-			<Typography>
-				Check out my <Link to="/projects">projects</Link>.
-			</Typography>
-
 			<Typography variant="display2" component="h2" className={classes.title}>
 				<EducationIcon className={classes.icon} /> Education
 			</Typography>
