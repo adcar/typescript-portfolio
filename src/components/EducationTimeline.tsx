@@ -19,7 +19,6 @@ const custom = {
 		alignItems: 'center',
 		backgroundColor: '#263238',
 		border: 'none',
-
 		display: 'flex',
 		height: 50,
 		justifyContent: 'center',

@@ -5,14 +5,15 @@ import injectSheet from 'react-jss'
 
 const styles = theme => ({
 	icon: {
-		padding: 20
+		paddingRight: 20
 	},
 	root: {
 		alignItems: 'center',
 		backgroundColor: theme.main,
 		boxShadow: theme.shadow,
 		display: 'flex',
-		justifyContent: 'flex-start'
+		justifyContent: 'flex-start',
+		padding: 20
 	}
 })
 interface IProps {

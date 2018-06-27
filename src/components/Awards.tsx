@@ -15,7 +15,7 @@ const styles = theme => ({
 		color: theme.main
 	},
 	item: {
-		padding: '10px 0'
+		padding: '15px 0'
 	},
 	root: {
 		padding: '30px 20px'
