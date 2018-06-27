@@ -10,9 +10,8 @@ import NavList from '../components/NavList'
 const bmStyles = {
 	bmBurgerBars: {},
 	bmBurgerButton: {
-		position: 'relative',
-
 		height: '48px',
+		position: 'relative',
 		width: '48px',
 		zIndex: '1'
 	},
@@ -102,6 +101,7 @@ class Navbar extends React.Component<IProps, IState> {
 			isOpen: false
 		})
 	}
+
 	public render() {
 		const { classes } = this.props
 		const { isOpen } = this.state
@@ -109,7 +109,7 @@ class Navbar extends React.Component<IProps, IState> {
 			<nav className={classes.navbar} id="nav">
 				<Menu
 					styles={bmStyles}
-					customBurgerIcon={<MenuIcon viewBox="0 0 24 24" />}
+					customBurgerIcon={<MenuIcon />}
 					pageWrapId={'page-wrap'}
 					outerContainerId={'outer-container'}
 					isOpen={isOpen}
