@@ -5,6 +5,7 @@ import injectSheet from 'react-jss'
 
 interface IProps {
 	classes: any
+	theme: any
 }
 
 const styles = theme => ({
@@ -25,9 +26,6 @@ const custom = {
 		left: -10,
 		width: 50
 	},
-	content: {
-		backgroundColor: '#263238'
-	},
 	subtitle: {
 		color: 'white',
 		marginLeft: 10
@@ -38,15 +36,23 @@ const custom = {
 	}
 }
 
-const EducationTimeline: React.SFC<IProps> = ({ classes }) => (
+const EducationTimeline: React.SFC<IProps> = ({ classes, theme }) => (
 	<div className={classes.root}>
 		<Timeline style={{ fontSize: '18px' }}>
 			<TimelineEvent
 				titleStyle={custom.title}
 				subtitleStyle={custom.subtitle}
 				icon={<p>P</p>}
-				bubbleStyle={custom.bubble}
-				contentStyle={custom.content}
+				bubbleStyle={{
+					...custom.bubble,
+					backgroundColor: theme.secondary,
+					boxShadow: theme.shadow
+				}}
+				contentStyle={{
+					backgroundColor: theme.main,
+					boxShadow: theme.shadow,
+					color: 'white'
+				}}
 				title="Pre-Tech 2"
 				subtitle="2015-2016"
 			>
@@ -57,8 +63,16 @@ const EducationTimeline: React.SFC<IProps> = ({ classes }) => (
 				titleStyle={custom.title}
 				subtitleStyle={custom.subtitle}
 				icon={<p>C</p>}
-				bubbleStyle={custom.bubble}
-				contentStyle={custom.content}
+				bubbleStyle={{
+					...custom.bubble,
+					backgroundColor: theme.secondary,
+					boxShadow: theme.shadow
+				}}
+				contentStyle={{
+					backgroundColor: theme.main,
+					boxShadow: theme.shadow,
+					color: 'white'
+				}}
 				title="Computer Animation and Web Design"
 				subtitle="2016-2018"
 			>
@@ -71,8 +85,16 @@ const EducationTimeline: React.SFC<IProps> = ({ classes }) => (
 				icon={<p>V</p>}
 				titleStyle={custom.title}
 				subtitleStyle={custom.subtitle}
-				bubbleStyle={custom.bubble}
-				contentStyle={custom.content}
+				bubbleStyle={{
+					...custom.bubble,
+					backgroundColor: theme.secondary,
+					boxShadow: theme.shadow
+				}}
+				contentStyle={{
+					backgroundColor: theme.main,
+					boxShadow: theme.shadow,
+					color: 'white'
+				}}
 			>
 				I'll be attending VTC this year!
 			</TimelineEvent>

@@ -2,7 +2,7 @@ import * as React from 'react'
 
 import Typography from '@material-ui/core/Typography'
 import MenuIcon from '@material-ui/icons/Menu'
-import { scaleRotate as Menu } from 'react-burger-menu'
+import { scaleDown as Menu } from 'react-burger-menu'
 import injectSheet from 'react-jss'
 import { Link } from 'react-router-dom'
 import NavList from '../components/NavList'

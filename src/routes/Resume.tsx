@@ -7,12 +7,11 @@ import EducationIcon from '@material-ui/icons/School'
 import AwardsIcon from '@material-ui/icons/Star'
 import SkillsIcon from '@material-ui/icons/Whatshot'
 import injectSheet from 'react-jss'
-
+import { Link } from 'react-router-dom'
 import Awards from '../components/Awards'
 import EducationTimeline from '../components/EducationTimeline'
 import PageLabel from '../components/PageLabel'
 import Skills from '../components/Skills'
-import Works from '../components/Works'
 
 interface IProps {
 	classes: any
@@ -56,10 +55,17 @@ const Resume: React.SFC<IProps> = ({ classes }) => (
 			</Typography>
 			<Skills />
 
-			<Typography variant="display2" component="h2" className={classes.title}>
+			<Typography
+				variant="display2"
+				component="h2"
+				className={classes.title}
+				gutterBottom={true}
+			>
 				<ExperienceIcon className={classes.icon} /> Experience
 			</Typography>
-			<Works />
+			<Typography>
+				Check out my <Link to="/projects">projects</Link>.
+			</Typography>
 
 			<Typography variant="display2" component="h2" className={classes.title}>
 				<EducationIcon className={classes.icon} /> Education
