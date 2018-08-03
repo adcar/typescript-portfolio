@@ -7,8 +7,7 @@ import amber from '@material-ui/core/colors/amber'
 
 import AboutMe from './routes/AboutMe'
 import Home from './routes/Home'
-import Euterpe from './routes/projects/Euterpe'
-import UprightBuilders from './routes/projects/UprightBuilders'
+import Projects from './routes/Projects'
 import Resume from './routes/Resume'
 
 import injectSheet from 'react-jss'
@@ -24,10 +23,10 @@ const theme = createMuiTheme({
 			default: 'white'
 		},
 		primary: {
-			main: '#eb3b5a'
+			main: '#00BCD4'
 		},
 		secondary: amber,
-		type: 'dark'
+		type: 'light'
 	}
 })
 
@@ -61,11 +60,7 @@ class App extends React.Component<IProps> {
 											<Route path="/" exact={true} component={Home} />
 											<Route path="/resume" component={Resume} />
 											<Route path="/about-me" component={AboutMe} />
-											<Route
-												path="/projects/upright-builders"
-												component={UprightBuilders}
-											/>
-											<Route path="/projects/euterpe" component={Euterpe} />
+											<Route path="/projects" component={Projects} />
 										</div>
 										<Footer />
 									</div>

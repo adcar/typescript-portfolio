@@ -1,18 +1,14 @@
 import * as React from 'react'
 
 import Typography from '@material-ui/core/Typography'
-
-import ExperienceIcon from '@material-ui/icons/Layers'
 import EducationIcon from '@material-ui/icons/School'
 import AwardsIcon from '@material-ui/icons/Star'
 import SkillsIcon from '@material-ui/icons/Whatshot'
 import injectSheet from 'react-jss'
-
 import Awards from '../components/Awards'
 import EducationTimeline from '../components/EducationTimeline'
 import PageLabel from '../components/PageLabel'
 import Skills from '../components/Skills'
-import Works from '../components/Works'
 
 interface IProps {
 	classes: any
@@ -20,7 +16,7 @@ interface IProps {
 
 const styles = theme => ({
 	icon: {
-		color: theme.main,
+		color: theme.secondary,
 		height: 40,
 		width: 40
 	},
@@ -51,42 +47,16 @@ const Resume: React.SFC<IProps> = ({ classes }) => (
 	<div>
 		<PageLabel title="Resume" />
 		<div className={classes.wrapper}>
-			<Typography
-				variant="display2"
-				component="h2"
-				color="inherit"
-				className={classes.title}
-			>
+			<Typography variant="display2" component="h2" className={classes.title}>
 				<SkillsIcon className={classes.icon} /> Skills
 			</Typography>
 			<Skills />
-
-			<Typography
-				variant="display2"
-				component="h2"
-				color="inherit"
-				className={classes.title}
-			>
-				<ExperienceIcon className={classes.icon} /> Experience
-			</Typography>
-			<Works />
-
-			<Typography
-				variant="display2"
-				component="h2"
-				color="inherit"
-				className={classes.title}
-			>
+			<Typography variant="display2" component="h2" className={classes.title}>
 				<EducationIcon className={classes.icon} /> Education
 			</Typography>
 			<EducationTimeline />
 
-			<Typography
-				variant="display2"
-				component="h2"
-				color="inherit"
-				className={classes.title}
-			>
+			<Typography variant="display2" component="h2" className={classes.title}>
 				<AwardsIcon className={classes.icon} /> Awards
 			</Typography>
 			<Awards />

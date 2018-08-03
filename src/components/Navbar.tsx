@@ -2,7 +2,7 @@ import * as React from 'react'
 
 import Typography from '@material-ui/core/Typography'
 import MenuIcon from '@material-ui/icons/Menu'
-import { scaleRotate as Menu } from 'react-burger-menu'
+import { scaleDown as Menu } from 'react-burger-menu'
 import injectSheet from 'react-jss'
 import { Link } from 'react-router-dom'
 import NavList from '../components/NavList'
@@ -10,9 +10,8 @@ import NavList from '../components/NavList'
 const bmStyles = {
 	bmBurgerBars: {},
 	bmBurgerButton: {
-		position: 'relative',
-
 		height: '48px',
+		position: 'relative',
 		width: '48px',
 		zIndex: '1'
 	},
@@ -27,7 +26,7 @@ const bmStyles = {
 		color: 'white'
 	},
 	bmMenu: {
-		background: '#34495e',
+		background: '#263238',
 		fontSize: '1.15em',
 
 		zIndex: '2'
@@ -44,7 +43,7 @@ const bmStyles = {
 	},
 
 	bmMorphShape: {
-		fill: '#373a47'
+		fill: '#263238'
 	},
 
 	bmItem: {
@@ -71,6 +70,7 @@ const styles = (theme: any) => ({
 	navbar: {
 		alignItems: 'center',
 		backgroundColor: theme.main,
+		boxShadow: theme.shadow,
 		color: 'white',
 		display: 'flex',
 		height: 70,
@@ -101,6 +101,7 @@ class Navbar extends React.Component<IProps, IState> {
 			isOpen: false
 		})
 	}
+
 	public render() {
 		const { classes } = this.props
 		const { isOpen } = this.state
@@ -108,14 +109,14 @@ class Navbar extends React.Component<IProps, IState> {
 			<nav className={classes.navbar} id="nav">
 				<Menu
 					styles={bmStyles}
-					customBurgerIcon={<MenuIcon viewBox="0 0 24 24" />}
+					customBurgerIcon={<MenuIcon />}
 					pageWrapId={'page-wrap'}
 					outerContainerId={'outer-container'}
 					isOpen={isOpen}
 				>
 					<NavList close={this.close} />
 				</Menu>
-				<Typography variant="headline">
+				<Typography variant="headline" color="inherit">
 					<Link to="/" className={classes.link}>
 						Alexander Cardosi
 					</Link>

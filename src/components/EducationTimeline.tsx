@@ -5,6 +5,7 @@ import injectSheet from 'react-jss'
 
 interface IProps {
 	classes: any
+	theme: any
 }
 
 const styles = theme => ({
@@ -16,17 +17,13 @@ const styles = theme => ({
 const custom = {
 	bubble: {
 		alignItems: 'center',
-		backgroundColor: '#eb3b5a',
+		backgroundColor: '#263238',
 		border: 'none',
 		display: 'flex',
 		height: 50,
 		justifyContent: 'center',
 		left: -10,
 		width: 50
-	},
-	content: {
-		backgroundColor: '#eb3b5a',
-		boxShadow: '0'
 	},
 	subtitle: {
 		color: 'white',
@@ -38,15 +35,23 @@ const custom = {
 	}
 }
 
-const EducationTimeline: React.SFC<IProps> = ({ classes }) => (
+const EducationTimeline: React.SFC<IProps> = ({ classes, theme }) => (
 	<div className={classes.root}>
 		<Timeline style={{ fontSize: '18px' }}>
 			<TimelineEvent
 				titleStyle={custom.title}
 				subtitleStyle={custom.subtitle}
 				icon={<p>P</p>}
-				bubbleStyle={custom.bubble}
-				contentStyle={custom.content}
+				bubbleStyle={{
+					...custom.bubble,
+					backgroundColor: theme.secondary,
+					boxShadow: theme.shadow
+				}}
+				contentStyle={{
+					backgroundColor: theme.main,
+					boxShadow: theme.shadow,
+					color: 'white'
+				}}
 				title="Pre-Tech 2"
 				subtitle="2015-2016"
 			>
@@ -57,8 +62,16 @@ const EducationTimeline: React.SFC<IProps> = ({ classes }) => (
 				titleStyle={custom.title}
 				subtitleStyle={custom.subtitle}
 				icon={<p>C</p>}
-				bubbleStyle={custom.bubble}
-				contentStyle={custom.content}
+				bubbleStyle={{
+					...custom.bubble,
+					backgroundColor: theme.secondary,
+					boxShadow: theme.shadow
+				}}
+				contentStyle={{
+					backgroundColor: theme.main,
+					boxShadow: theme.shadow,
+					color: 'white'
+				}}
 				title="Computer Animation and Web Design"
 				subtitle="2016-2018"
 			>
@@ -71,8 +84,16 @@ const EducationTimeline: React.SFC<IProps> = ({ classes }) => (
 				icon={<p>V</p>}
 				titleStyle={custom.title}
 				subtitleStyle={custom.subtitle}
-				bubbleStyle={custom.bubble}
-				contentStyle={custom.content}
+				bubbleStyle={{
+					...custom.bubble,
+					backgroundColor: theme.secondary,
+					boxShadow: theme.shadow
+				}}
+				contentStyle={{
+					backgroundColor: theme.main,
+					boxShadow: theme.shadow,
+					color: 'white'
+				}}
 			>
 				I'll be attending VTC this year!
 			</TimelineEvent>

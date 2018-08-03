@@ -1,5 +1,5 @@
 :root {
-	--main: #eb3b5a;
+	--main: #00bcd4;
 }
 
 body::-webkit-scrollbar {
@@ -12,5 +12,5 @@ body::-webkit-scrollbar-thumb {
 }
 
 *::selection {
-	background: #f59196;
+	background: #4dd0e1;
 }

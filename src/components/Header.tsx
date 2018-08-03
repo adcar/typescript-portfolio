@@ -25,11 +25,8 @@ interface IProps {
 	classes: any
 	chidlren: any
 }
-interface IState {
-	isLoaded: boolean
-}
 
-class Header extends React.Component<IProps, IState> {
+class Header extends React.Component<IProps> {
 	constructor(props) {
 		super(props)
 		this.state = {
@@ -45,18 +42,7 @@ class Header extends React.Component<IProps, IState> {
 	}
 	public render() {
 		const { classes, children } = this.props
-		const { isLoaded } = this.state
-		return (
-			<div
-				className={classes.root}
-				style={{
-					borderRadius: isLoaded ? 0 : '50%',
-					transform: isLoaded ? 'scale(1)' : 'scale(0)'
-				}}
-			>
-				{children}
-			</div>
-		)
+		return <div className={classes.root}>{children}</div>
 	}
 }
 
