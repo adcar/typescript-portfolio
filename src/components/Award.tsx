@@ -26,7 +26,7 @@ const Award: React.SFC<IProps> = ({ classes, icon, title, desc }) => (
 	<div className={classes.root}>
 		<div className={classes.icon}>{icon}</div>
 		<div>
-			<Typography variant="title" gutterBottom={true} color="inherit">
+			<Typography variant="h6" gutterBottom={true} color="inherit">
 				{title}
 			</Typography>
 			<Typography color="inherit">{desc}</Typography>

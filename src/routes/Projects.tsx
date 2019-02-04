@@ -1,6 +1,5 @@
 import * as React from "react";
 
-import Typography from "@material-ui/core/Typography";
 import injectSheet from "react-jss";
 import PageLabel from "../components/PageLabel";
 import ProjectCard from "../components/ProjectCard";
@@ -61,15 +60,12 @@ interface IProps {
 const Projects: React.SFC<IProps> = ({ classes }) => (
   <div>
     <PageLabel title="Projects" />
-    <Typography variant="display1" align="center" className={classes.title}>
-      Click on Any Project!
-    </Typography>
     <div className={classes.wrapper}>
       <ProjectCard
         image={uprightBuilders}
         title="Upright Builders"
         content="A Wordpress website I built for Upright Builders, LLC."
-        link="http://uprightbuildersvt.com"
+        url="upright-builders"
       />
       <ProjectCard
         image={euterpe}

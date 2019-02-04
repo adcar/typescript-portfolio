@@ -4,20 +4,20 @@
 	"private": true,
 	"license": "GPL-3.0",
 	"dependencies": {
-		"@material-ui/core": "^1.2.0",
-		"@material-ui/icons": "^1.1.0",
+		"@material-ui/core": "^3.9.2",
+		"@material-ui/icons": "^3.0.2",
 		"@types/jss": "^9.5.3",
 		"@types/react-burger-menu": "^2.2.0",
 		"hex-rgba": "^1.0.2",
 		"react": "^16.4.0",
 		"react-burger-menu": "^2.5.0",
-		"react-card-flip": "^0.2.1",
+		"react-card-flip": "^0.4.0",
 		"react-collapsible": "^2.2.0",
 		"react-dom": "^16.4.0",
 		"react-event-timeline": "^1.5.4",
 		"react-jss": "^8.5.0",
 		"react-router-dom": "^4.3.1",
-		"react-scripts-ts": "2.16.0"
+		"react-scripts-ts": "3.1.0"
 	},
 	"scripts": {
 		"favicon": "real-favicon generate faviconDescription.json faviconData.json public",
@@ -31,7 +31,7 @@
 		"@types/node": "^10.3.2",
 		"@types/react": "^16.3.17",
 		"@types/react-dom": "^16.0.6",
-		"cli-real-favicon": "^0.0.6",
-		"typescript": "^2.9.1"
+		"cli-real-favicon": "^0.0.7",
+		"typescript": "^3.3.1"
 	}
 }

@@ -5,6 +5,7 @@ import Typography from "@material-ui/core/Typography";
 import ReactCardFlip from "react-card-flip";
 import injectSheet from "react-jss";
 
+import { withRouter } from "react-router-dom";
 const styles = theme => ({
   back: {
     backgroundColor: theme.main,
@@ -44,7 +45,8 @@ interface IProps {
   image: string;
   title: string;
   content: string;
-  link: string;
+  url: string;
+  history: any;
 }
 interface IState {
   isFlipped: boolean;
@@ -56,20 +58,36 @@ class ProjectCard extends React.Component<IProps, IState> {
     this.state = {
       isFlipped: false
     };
+    this.handleMouseEnter = this.handleMouseEnter.bind(this);
+    this.handleMouseLeave = this.handleMouseLeave.bind(this);
     this.handleClick = this.handleClick.bind(this);
   }
 
   public handleClick(e) {
     e.preventDefault();
-    this.setState({ isFlipped: !this.state.isFlipped });
+    const { history, url } = this.props;
+    history.push(`/projects/${url}`);
+  }
+  public handleMouseEnter(e) {
+    e.preventDefault();
+    this.setState({ isFlipped: true });
+  }
+  public handleMouseLeave(e) {
+    e.preventDefault();
+    this.setState({ isFlipped: false });
   }
 
   public render() {
-    const { classes, title, image, content, link } = this.props;
+    const { classes, title, image, content } = this.props;
     return (
-      <div className={classes.root} onClick={this.handleClick}>
+      <div
+        className={classes.root}
+        onMouseOver={this.handleMouseEnter}
+        onMouseLeave={this.handleMouseLeave}
+        onClick={this.handleClick}
+      >
         <Typography
-          variant="display1"
+          variant="h4"
           align="center"
           className={classes.title}
           color="inherit"
@@ -77,7 +95,6 @@ class ProjectCard extends React.Component<IProps, IState> {
           {title}
         </Typography>
         <ReactCardFlip isFlipped={this.state.isFlipped}>
-          <h1>hi</h1>
           <img
             src={image}
             alt="Project Image"
@@ -85,14 +102,12 @@ class ProjectCard extends React.Component<IProps, IState> {
             className={classes.projectImage}
           />
           <div className={classes.back} key="back">
-            {content}{" "}
-            <a className={classes.link} target="_blank" href={link}>
-              {link}
-            </a>
+            {content}
           </div>
         </ReactCardFlip>
       </div>
     );
   }
 }
-export default injectSheet(styles)(ProjectCard);
+
+export default withRouter(injectSheet(styles)(ProjectCard));
