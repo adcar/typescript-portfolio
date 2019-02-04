@@ -45,30 +45,32 @@ const AboutMe: React.SFC<IProps> = ({ classes }) => (
     <div className={classes.wrapper}>
       <div>
         <img className={classes.image} src={ProfilePhoto} alt="Profile Photo" />
-        <Typography variant="h4">Introduction</Typography>
+        <Typography variant="h5">Introduction</Typography>
         <Typography>
-          Hi, I'm Alexander Cardosi, a web developer from Colchester, Vermont. I
-          have for front end design and development and love learning new
-          technologies and helping the open source community any way I can.
-          React, Redux, and Typescript are some of my favorite technolgies and
-          love to implement them in any of my projects (Including this
-          website!). Also, I love penguins.
+          Hi, I'm Alexander Cardosi, an aspiring front-end developer from
+          Colchester, Vermont. I'm currently studying Software Engineering at
+          Vermont Technical College. My interests generally involve computer
+          science and contributing to the open source community any way I can.
         </Typography>
       </div>
 
       <div className={classes.section}>
-        <Typography variant="h4">Interests</Typography>
+        <Typography variant="h5">Interests</Typography>
         <Typography>
-          I love creating small projects on my free time, and learning cool new
-          technologies. GNU / Linux is my preferred operating system, and I
-          often find myself tinkering with it and figuring out new and more
-          efficient ways to operate my machine. Outside of my computer science,
-          I enjoy playing a variety of video games and hanging out with friends
-          or family.
+          I have a few hobbies, most of which revolve around Computer Science.
+          My hobbies include web development, software enginnering, photography,
+          graphic design, and maintaining a few Arch Linux packages.
         </Typography>
       </div>
       <div className={classes.section}>
-        <Typography variant="h4">Credits</Typography>
+        <Typography variant="h5">Social Media</Typography>
+        <Typography>
+          You can find me on <a href="https://github.com/adcar">GitHub</a> and{" "}
+          <a href="https://twitter.com/adcardosi">Twitter</a>.
+        </Typography>
+      </div>
+      <div className={classes.section}>
+        <Typography variant="h5">Credits</Typography>
         <Typography>
           This website was created with{" "}
           <a href="https://reactjs.org" className={classes.link}>
@@ -93,6 +95,8 @@ const AboutMe: React.SFC<IProps> = ({ classes }) => (
           <a href="https://www.freepik.com" className={classes.link}>
             FreePik
           </a>
+        </Typography>
+        <Typography>
           Header Photo by{" "}
           <a href="https://unsplash.com/@laurenmancke" className={classes.link}>
             Lauren Mancke

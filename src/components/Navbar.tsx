@@ -110,6 +110,7 @@ class Navbar extends React.Component<IProps, IState> {
         <Menu
           styles={bmStyles}
           customBurgerIcon={<MenuIcon />}
+          customCrossIcon={false}
           pageWrapId={"page-wrap"}
           outerContainerId={"outer-container"}
           isOpen={isOpen}
