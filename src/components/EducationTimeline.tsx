@@ -48,7 +48,8 @@ const EducationTimeline: React.SFC<IProps> = ({ classes, theme }) => (
         }}
         contentStyle={{
           backgroundColor: theme.main,
-          boxShadow: theme.shadow
+          boxShadow: theme.shadow,
+          fontSize: 14
         }}
         title="Pre-Tech 2"
         subtitle="2015-2016"
@@ -67,7 +68,8 @@ const EducationTimeline: React.SFC<IProps> = ({ classes, theme }) => (
         }}
         contentStyle={{
           backgroundColor: theme.main,
-          boxShadow: theme.shadow
+          boxShadow: theme.shadow,
+          fontSize: 14
         }}
         title="Computer Animation and Web Design"
         subtitle="2016-2018"
@@ -88,10 +90,12 @@ const EducationTimeline: React.SFC<IProps> = ({ classes, theme }) => (
         }}
         contentStyle={{
           backgroundColor: theme.main,
-          boxShadow: theme.shadow
+          boxShadow: theme.shadow,
+          fontSize: 14
         }}
       >
-        I'll be attending VTC this year!
+        I'm currently studying Software Engineering at Vermont Technical
+        College.
       </TimelineEvent>
     </Timeline>
   </div>
