@@ -66,7 +66,7 @@ class ProjectCard extends React.Component<IProps, IState> {
   public handleClick(e) {
     e.preventDefault();
     const { history, url } = this.props;
-    history.push(`/projects/${url}`);
+    history.push(`/project/${url}`);
   }
   public handleMouseEnter(e) {
     e.preventDefault();

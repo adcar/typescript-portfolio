@@ -38,8 +38,7 @@ const styles = theme => ({
     display: "flex",
     flexWrap: "wrap",
     justifyContent: "space-around",
-    paddingLeft: "10vw",
-    paddingRight: "10vw"
+    padding: "5vh 2vw"
   }
 });
 interface IProps {

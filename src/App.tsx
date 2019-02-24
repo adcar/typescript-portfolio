@@ -16,6 +16,7 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 
 import AppWrapper from "./AppWrapper";
+import UprightBuilders from "./routes/projects/UprightBuilders";
 
 const theme = createMuiTheme({
   palette: {
@@ -64,6 +65,14 @@ class App extends React.Component<IProps> {
                       <Route path="/resume" component={Resume} />
                       <Route path="/about-me" component={AboutMe} />
                       <Route path="/projects" component={Projects} />
+
+                      <Route
+                        path="/project/upright-builders"
+                        component={UprightBuilders}
+                      />
+                      <Route />
+                      <Route />
+                      <Route />
                     </div>
                     <Footer />
                   </div>
