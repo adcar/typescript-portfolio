@@ -33,12 +33,18 @@ const styles = theme => ({
     color: "white !important"
   },
   root: {
-    alignItems: "center",
     backgroundColor: theme.main,
     display: "flex",
-    flexWrap: "wrap",
     justifyContent: "space-around",
-    padding: "5vh 2vw"
+    padding: "5vh 2vw",
+    flexDirection: "column",
+    [theme.breakpoints.up("sm")]: {
+      alignItems: "center",
+      flexDirection: "row"
+    }
+  },
+  title: {
+    marginLeft: 20
   }
 });
 interface IProps {
@@ -51,7 +57,7 @@ class Footer extends React.Component<IProps> {
     return (
       <footer className={classes.root}>
         <div className={classes.item}>
-          <Typography variant="h4" align="center" color="inherit">
+          <Typography variant="h4" color="inherit" className={classes.title}>
             Social
           </Typography>
           <List>
@@ -97,7 +103,7 @@ class Footer extends React.Component<IProps> {
           </List>
         </div>
         <div className={classes.item}>
-          <Typography variant="h4" align="center" color="inherit">
+          <Typography variant="h4" color="inherit" className={classes.title}>
             Contact
           </Typography>
           <List>
