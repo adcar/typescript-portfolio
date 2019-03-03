@@ -5,10 +5,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import amber from "@material-ui/core/colors/amber";
 
-import AboutMe from "./routes/AboutMe";
-import Home from "./routes/Home";
-import Projects from "./routes/Projects";
-import Resume from "./routes/Resume";
+import asyncComponent from "./components/AsyncComponent";
 
 import injectSheet from "react-jss";
 
@@ -16,7 +13,14 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 
 import AppWrapper from "./AppWrapper";
-import UprightBuilders from "./routes/projects/UprightBuilders";
+
+const AboutMe = asyncComponent(() => import("./routes/AboutMe"));
+const Home = asyncComponent(() => import("./routes/Home"));
+const Projects = asyncComponent(() => import("./routes/Projects"));
+const Resume = asyncComponent(() => import("./routes/Resume"));
+const UprightBuilders = asyncComponent(() =>
+  import("./routes/projects/UprightBuilders")
+);
 
 const theme = createMuiTheme({
   palette: {
