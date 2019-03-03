@@ -9,24 +9,19 @@ interface ImageBannerProps {
 
 const styles = theme => ({
   banner: {
-    height: 500,
     backgroundSize: "cover",
     backgroundPosition: "center",
-    maxWidth: 1200,
+    height: "auto",
+    width: "100%",
     padding: theme.spacing.unit,
-    margin: "20px auto",
-    boxShadow: theme.shadow
+    boxShadow: theme.shadow,
+    marginBottom: 50
   }
 });
 
 const ImageBanner: React.SFC<ImageBannerProps> = props => {
   const { classes } = props;
-  return (
-    <div
-      className={classes.banner}
-      style={{ backgroundImage: `url(${props.image})` }}
-    />
-  );
+  return <img className={classes.banner} src={props.image} />;
 };
 
 export default injectSheet(styles)(ImageBanner);
