@@ -21,7 +21,9 @@ const styles = theme => ({
 
 const ImageBanner: React.SFC<ImageBannerProps> = props => {
   const { classes } = props;
-  return <img className={classes.banner} src={props.image} />;
+  return (
+    <img className={classes.banner} src={props.image} alt="Banner Image" />
+  );
 };
 
 export default injectSheet(styles)(ImageBanner);

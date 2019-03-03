@@ -72,7 +72,7 @@ const Home: React.SFC<IProps> = ({ classes }) => (
   <div>
     <Header>
       <div className={classes.wrapper}>
-        <img src={Logo} className={classes.logo} />
+        <img src={Logo} className={classes.logo} alt="Alex Cardosi logo" />
         <Typography
           className={classes.title}
           component="h1"
