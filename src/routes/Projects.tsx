@@ -79,6 +79,16 @@ const Projects: React.SFC<IProps> = ({ classes }) => (
       />
       <ProjectCard
         image={portfolio}
+        title="Senior Portfolio"
+        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean rhoncus magna vel massa luctus tincidunt."
+      />
+      <ProjectCard
+        image={portfolio}
+        title="Penguins"
+        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean rhoncus magna vel massa luctus tincidunt."
+      />
+      <ProjectCard
+        image={portfolio}
         title="Portfolio"
         content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean rhoncus magna vel massa luctus tincidunt."
       />
