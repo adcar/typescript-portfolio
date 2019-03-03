@@ -9,13 +9,13 @@ interface ImageBannerProps {
 
 const styles = theme => ({
   banner: {
-    backgroundSize: "cover",
     backgroundPosition: "center",
-    height: "auto",
-    width: "100%",
-    padding: theme.spacing.unit,
+    backgroundSize: "cover",
     boxShadow: theme.shadow,
-    marginBottom: 50
+    height: "auto",
+    marginBottom: 50,
+    padding: theme.spacing.unit,
+    width: "100%"
   }
 });
 

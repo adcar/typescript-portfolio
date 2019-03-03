@@ -1,21 +1,22 @@
 import * as React from "react";
 
+import { Typography } from "@material-ui/core";
+
 import ImageBanner from "../../components/ImageBanner";
 import PageLabel from "../../components/PageLabel";
-
-import { Typography } from "@material-ui/core";
 import uprightBuildersBanner from "../../img/banners/uprightBuilders.png";
+
 import injectSheet from "react-jss";
 
 const styles = theme => ({
   summary: {
+    alignItems: "center",
     display: "flex",
     flexDirection: "column",
-    alignItems: "center",
-    maxWidth: "1000px",
-    padding: theme.spacing.unit * 4,
     margin: "0 auto",
-    marginBottom: 25
+    marginBottom: 25,
+    maxWidth: "1000px",
+    padding: theme.spacing.unit * 4
   },
   text: {
     margin: "10px 0"

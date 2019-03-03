@@ -35,9 +35,9 @@ const styles = theme => ({
   root: {
     backgroundColor: theme.main,
     display: "flex",
+    flexDirection: "column",
     justifyContent: "space-around",
     padding: "5vh 2vw",
-    flexDirection: "column",
     [theme.breakpoints.up("sm")]: {
       alignItems: "center",
       flexDirection: "row"
