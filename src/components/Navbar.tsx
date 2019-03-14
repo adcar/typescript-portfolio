@@ -26,7 +26,7 @@ const bmStyles = {
     color: "white"
   },
   bmMenu: {
-    background: "#263238",
+    background: "#1f1f1f",
     fontSize: "1.15em",
 
     zIndex: "2"
@@ -43,7 +43,7 @@ const bmStyles = {
   },
 
   bmMorphShape: {
-    fill: "#263238"
+    fill: "#1f1f1f"
   },
 
   bmItem: {

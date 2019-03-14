@@ -17,7 +17,7 @@ const styles = theme => ({
 const custom = {
   bubble: {
     alignItems: "center",
-    backgroundColor: "#263238",
+    backgroundColor: "#1f1f1f",
     border: "none",
     display: "flex",
     height: 50,
