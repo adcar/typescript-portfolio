@@ -133,8 +133,8 @@ class Footer extends React.Component<IProps> {
                 <Link className={classes.listItemIcon} />
               </ListItemIcon>
               <ListItemText>
-                <a className={classes.link} href="https://alexcardosi.me">
-                  https://alexcardosi.me
+                <a className={classes.link} href="https://acardosi.dev">
+                  https://acardosi.dev
                 </a>
               </ListItemText>
             </ListItem>
