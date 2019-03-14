@@ -112,11 +112,8 @@ class Footer extends React.Component<IProps> {
                 <Email className={classes.listItemIcon} />
               </ListItemIcon>
               <ListItemText>
-                <a
-                  className={classes.link}
-                  href="mailto:alexanderdcardosi@gmail.com"
-                >
-                  alexanderdcardosi@gmail.com
+                <a className={classes.link} href="mailto:contact@acardosi.dev">
+                  contact@acardosi.dev
                 </a>
               </ListItemText>
             </ListItem>
