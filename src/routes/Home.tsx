@@ -1,9 +1,7 @@
 import * as React from "react";
 
-import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import injectSheet from "react-jss";
-import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import bgImg from "../img/bgImg.jpg";
 import Logo from "../img/logo.svg";
@@ -27,12 +25,6 @@ const styles = theme => ({
     marginLeft: theme.spacing.unit
   },
 
-  buttons: {
-    alignItems: "center",
-    display: "flex",
-    justifyContent: "center",
-    marginTop: theme.spacing.unit * 3
-  },
   link: {
     textDecoration: "none"
   },
@@ -121,23 +113,6 @@ const Home: React.SFC<IProps> = ({ classes }) => (
         >
           Web Developer
         </Typography>
-        <div className={classes.buttons}>
-          <Link to="/resume" className={classes.link}>
-            <Button variant="contained" className={classes.resumeBtn}>
-              Resume
-            </Button>
-          </Link>
-
-          <Link to="/about-me" className={classes.link}>
-            <Button
-              variant="contained"
-              color="primary"
-              className={classes.aboutBtn}
-            >
-              About
-            </Button>
-          </Link>
-        </div>
       </div>
     </Header>
   </div>
