@@ -9,6 +9,9 @@ import uprightBuildersBanner from "../../img/banners/uprightBuilders.png";
 import injectSheet from "react-jss";
 
 const styles = theme => ({
+  root: {
+    backgroundColor: "white"
+  },
   summary: {
     alignItems: "center",
     display: "flex",
@@ -19,6 +22,7 @@ const styles = theme => ({
     padding: theme.spacing.unit * 4
   },
   text: {
+    fontSize: "14pt",
     margin: "10px 0"
   }
 });
@@ -33,7 +37,7 @@ class UprightBuilders extends React.Component<IProps> {
   public render() {
     const { classes } = this.props;
     return (
-      <div>
+      <div className={classes.root}>
         <PageLabel title="Upright Builders" />
 
         <div className={classes.summary}>

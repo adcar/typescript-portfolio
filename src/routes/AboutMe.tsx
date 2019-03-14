@@ -25,7 +25,7 @@ const styles = theme => ({
     textDecoration: "none"
   },
   root: {
-    backgroundColor: "red"
+    backgroundColor: "white"
   },
   section: {
     clear: "left",
@@ -40,7 +40,7 @@ const styles = theme => ({
 });
 
 const AboutMe: React.SFC<IProps> = ({ classes }) => (
-  <div>
+  <div className={classes.root}>
     <PageLabel title="About Me" />
     <div className={classes.wrapper}>
       <div>

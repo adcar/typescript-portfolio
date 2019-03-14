@@ -37,6 +37,9 @@ const styles = theme => ({
     display: "flex",
     flexDirection: "column"
   },
+  root: {
+    backgroundColor: "white"
+  },
   title: {
     marginTop: 30
   },
@@ -58,7 +61,7 @@ interface IProps {
   classes: any;
 }
 const Projects: React.SFC<IProps> = ({ classes }) => (
-  <div>
+  <div className={classes.root}>
     <PageLabel title="Projects" />
     <div className={classes.wrapper}>
       <ProjectCard

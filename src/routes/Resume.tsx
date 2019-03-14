@@ -32,6 +32,9 @@ const styles = theme => ({
   progressRoot: {
     height: 20
   },
+  root: {
+    backgroundColor: "white"
+  },
   title: {
     marginTop: 50
   },
@@ -44,7 +47,7 @@ const styles = theme => ({
 });
 
 const Resume: React.SFC<IProps> = ({ classes }) => (
-  <div>
+  <div className={classes.root}>
     <PageLabel title="Resume" />
     <div className={classes.wrapper}>
       <Typography variant="display2" component="h2" className={classes.title}>
