@@ -71,27 +71,25 @@ const styles = theme => ({
         height: "478px"
       },
       backgroundImage: `url(${bgImg})`,
-
       backgroundPosition: "center",
       backgroundSize: "1920px 1080px",
       content: "''",
-      transform: "scaleX(1.1)",
       display: "block",
-
       filter: "blur(20px)",
       height: "329px",
       position: "absolute",
+      transform: "scaleX(1.1)",
       width: "100%",
       zIndex: "-1"
     },
+    alignItems: "center",
     boxShadow:
       "0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22)",
-    width: "100%",
-    alignItems: "center",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
-    padding: theme.spacing.unit * 3
+    padding: theme.spacing.unit * 3,
+    width: "100%"
   }
 });
 
