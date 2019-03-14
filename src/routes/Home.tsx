@@ -5,12 +5,18 @@ import Typography from "@material-ui/core/Typography";
 import injectSheet from "react-jss";
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
+import bgImg from "../img/bgImg.jpg";
 import Logo from "../img/logo.svg";
 
 interface IProps {
   classes: any;
 }
 const styles = theme => ({
+  "@import": ["url('https://fonts.googleapis.com/css?family=Open+Sans:300')"],
+  "@keyframes blurIn": {
+    from: { filter: "blur(0px)" },
+    to: { filter: "blur(20px)" }
+  },
   aboutBtn: {
     "&:hover": {
       backgroundColor: theme.secondary,
@@ -25,7 +31,7 @@ const styles = theme => ({
     alignItems: "center",
     display: "flex",
     justifyContent: "center",
-    marginTop: theme.spacing.unit * 2.5
+    marginTop: theme.spacing.unit * 3
   },
   link: {
     textDecoration: "none"
@@ -51,20 +57,46 @@ const styles = theme => ({
     [theme.breaks.md]: {
       fontSize: 34
     },
+    color: "white",
+    fontFamily: "Open Sans",
     fontSize: 20,
-    marginTop: 0
+    fontWeight: "300",
+    letterSpacing: "0.4em",
+    marginTop: theme.spacing.unit,
+    paddingLeft: "0.4em",
+    textTransform: "uppercase"
   },
   title: {
     [theme.breaks.md]: {
       fontSize: 56
     },
+    color: "white",
     fontSize: 30
   },
   wrapper: {
+    "&:before": {
+      animationDuration: "3s",
+      animationFillMode: "forwards",
+      animationName: "blurIn",
+      animationTimingFunction: "ease-in",
+      backgroundImage: `url(${bgImg})`,
+
+      backgroundPosition: "center",
+      backgroundSize: "cover",
+      clipPath: "polygon(50% 0%, 100% 60%, 50% 90%, 0 60%)",
+      content: '""',
+      display: "block",
+      filter: "blur(20px)",
+      height: "100%",
+      position: "absolute",
+      width: "100%",
+      zIndex: "-1"
+    },
     alignItems: "center",
     display: "flex",
     flexDirection: "column",
-    justifyContent: "center"
+    justifyContent: "center",
+    padding: theme.spacing.unit * 3
   }
 });
 

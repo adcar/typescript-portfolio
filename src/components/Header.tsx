@@ -1,49 +1,50 @@
-import * as React from 'react'
-import injectSheet from 'react-jss'
-import bgImg from '../img/bgImg.jpg'
+import * as React from "react";
+import injectSheet from "react-jss";
+import bgImg from "../img/bgImg.jpg";
 const styles = theme => ({
-	root: {
-		alignItems: 'center',
-		backgroundColor: theme.bg,
-		backgroundImage: `linear-gradient(${theme.bgTrans}, ${
-			theme.bgTrans
-		}), url(${bgImg})`,
-		backgroundPosition: 'center',
-		backgroundSize: 'cover',
-		color: 'white',
-		display: 'flex',
-		height: '100vh',
-		justifyContent: 'center',
-		margin: '0 auto',
-		overflow: 'hidden',
-		transition:
-			'transform 0.5s ease-out, border-radius 1s ease-in, width 0.75s ease-in',
-		width: '100%'
-	}
-})
+  root: {
+    position: "relative",
+    zIndex: "-2",
+
+    alignItems: "center",
+    backgroundColor: theme.bg,
+    backgroundImage: `url(${bgImg})`,
+    backgroundPosition: "center",
+    backgroundSize: "cover",
+    color: "white",
+    display: "flex",
+    height: "100vh",
+    justifyContent: "center",
+    margin: "0 auto",
+    overflow: "hidden",
+    transition:
+      "transform 0.5s ease-out, border-radius 1s ease-in, width 0.75s ease-in",
+    width: "100%"
+  }
+});
 interface IProps {
-	classes: any
-	chidlren: any
+  classes: any;
+  chidlren: any;
 }
 
 class Header extends React.Component<IProps> {
-	constructor(props) {
-		super(props)
-		this.state = {
-			isLoaded: false
-		}
-	}
-	public componentDidMount() {
-		setTimeout(() => {
-			this.setState({
-				isLoaded: true
-			})
-		}, 100)
-	}
-	public render() {
-		const { classes, children } = this.props
-		return <div className={classes.root}>{children}</div>
-	}
+  constructor(props) {
+    super(props);
+    this.state = {
+      isLoaded: false
+    };
+  }
+  public componentDidMount() {
+    setTimeout(() => {
+      this.setState({
+        isLoaded: true
+      });
+    }, 100);
+  }
+  public render() {
+    const { classes, children } = this.props;
+    return <div className={classes.root}>{children}</div>;
+  }
 }
 
-export default injectSheet(styles)(Header)
+export default injectSheet(styles)(Header);
