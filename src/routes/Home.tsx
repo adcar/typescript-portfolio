@@ -67,23 +67,26 @@ const styles = theme => ({
   },
   wrapper: {
     "&:before": {
-      animationDuration: "3s",
-      animationFillMode: "forwards",
-      animationName: "blurIn",
-      animationTimingFunction: "ease-in",
+      [theme.breaks.md]: {
+        height: "478px"
+      },
       backgroundImage: `url(${bgImg})`,
 
       backgroundPosition: "center",
-      backgroundSize: "cover",
-      clipPath: "polygon(50% 0%, 100% 60%, 50% 90%, 0 60%)",
-      content: '""',
+      backgroundSize: "1920px 1080px",
+      content: "''",
+      transform: "scaleX(1.1)",
       display: "block",
+
       filter: "blur(20px)",
-      height: "100%",
+      height: "329px",
       position: "absolute",
       width: "100%",
       zIndex: "-1"
     },
+    boxShadow:
+      "0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22)",
+    width: "100%",
     alignItems: "center",
     display: "flex",
     flexDirection: "column",

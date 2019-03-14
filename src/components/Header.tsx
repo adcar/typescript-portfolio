@@ -10,7 +10,7 @@ const styles = theme => ({
     backgroundColor: theme.bg,
     backgroundImage: `url(${bgImg})`,
     backgroundPosition: "center",
-    backgroundSize: "cover",
+    backgroundSize: "1920px 1080px",
     color: "white",
     display: "flex",
     height: "100vh",
