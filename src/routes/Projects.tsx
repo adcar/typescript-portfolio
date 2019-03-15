@@ -4,10 +4,13 @@ import injectSheet from "react-jss";
 import PageLabel from "../components/PageLabel";
 import ProjectCard from "../components/ProjectCard";
 
-import dionysus from "../img/dionysus.png";
-import euterpe from "../img/euterpe.png";
-import portfolio from "../img/portfolio.png";
-import uprightBuilders from "../img/uprightBuilders.png";
+import dionysus from "../img/thumbnails/dionysus.png";
+import euterpe from "../img/thumbnails/euterpe.png";
+import portfolio from "../img/thumbnails/portfolio.png";
+import uprightBuilders from "../img/thumbnails/uprightBuilders.png";
+
+import seniorPortfolio from "../img/thumbnails/seniorPortfolio.png";
+import penguins from "../img/thumbnails/penguins.png";
 
 const styles = theme => ({
   desc: {
@@ -83,13 +86,13 @@ const Projects: React.SFC<IProps> = ({ classes }) => (
         url="dionysus"
       />
       <ProjectCard
-        image={portfolio}
+        image={seniorPortfolio}
         title="Senior Portfolio"
         content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean rhoncus magna vel massa luctus tincidunt."
         url="senior-portfolio"
       />
       <ProjectCard
-        image={portfolio}
+        image={penguins}
         title="Penguins"
         content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean rhoncus magna vel massa luctus tincidunt."
         url="penguins"
