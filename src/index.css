@@ -24,4 +24,5 @@ body::-webkit-scrollbar-thumb {
 
 *::selection {
   background: var(--main);
+  color: white;
 }
