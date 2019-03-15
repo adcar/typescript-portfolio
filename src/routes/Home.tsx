@@ -9,12 +9,9 @@ import Logo from "../img/logo.svg";
 interface IProps {
   classes: any;
 }
+
 const styles = theme => ({
   "@import": ["url('https://fonts.googleapis.com/css?family=Open+Sans:300')"],
-  "@keyframes blurIn": {
-    from: { filter: "blur(0px)" },
-    to: { filter: "blur(20px)" }
-  },
   aboutBtn: {
     "&:hover": {
       backgroundColor: theme.secondary,
