@@ -74,26 +74,31 @@ const Projects: React.SFC<IProps> = ({ classes }) => (
         image={euterpe}
         title="Euterpe"
         content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean rhoncus magna vel massa luctus tincidunt."
+        url="euterpe"
       />
       <ProjectCard
         image={dionysus}
         title="Dionysus"
         content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean rhoncus magna vel massa luctus tincidunt."
+        url="dionysus"
       />
       <ProjectCard
         image={portfolio}
         title="Senior Portfolio"
         content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean rhoncus magna vel massa luctus tincidunt."
+        url="senior-portfolio"
       />
       <ProjectCard
         image={portfolio}
         title="Penguins"
         content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean rhoncus magna vel massa luctus tincidunt."
+        url="penguins"
       />
       <ProjectCard
         image={portfolio}
         title="Portfolio"
         content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean rhoncus magna vel massa luctus tincidunt."
+        url="portfolio"
       />
     </div>
   </div>

@@ -21,6 +21,13 @@ const Resume = asyncComponent(() => import("./routes/Resume"));
 const UprightBuilders = asyncComponent(() =>
   import("./routes/projects/UprightBuilders")
 );
+const Euterpe = asyncComponent(() => import("./routes/projects/Euterpe"));
+const Dionysus = asyncComponent(() => import("./routes/projects/Dionysus"));
+const SeniorPortfolio = asyncComponent(() =>
+  import("./routes/projects/SeniorPortfolio")
+);
+const Penguins = asyncComponent(() => import("./routes/projects/Penguins"));
+const Portfolio = asyncComponent(() => import("./routes/projects/Portfolio"));
 
 const theme = createMuiTheme({
   palette: {
@@ -74,6 +81,19 @@ class App extends React.Component<IProps> {
                         path="/project/upright-builders"
                         component={UprightBuilders}
                       />
+
+                      <Route path="/project/euterpe" component={Euterpe} />
+
+                      <Route path="/project/dionysus" component={Dionysus} />
+
+                      <Route
+                        path="/project/senior-portfolio"
+                        component={SeniorPortfolio}
+                      />
+
+                      <Route path="/project/penguins" component={Penguins} />
+
+                      <Route path="/project/portfolio" component={Portfolio} />
                       <Route />
                       <Route />
                       <Route />
