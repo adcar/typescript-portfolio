@@ -2,10 +2,10 @@ import * as React from "react";
 
 import Project from "src/components/Project";
 import ProjectParagraph from "src/components/ProjectParagraph";
-import uprightBuildersBanner from "src/img/banners/uprightBuilders.png";
+import dionysusBanner from "src/img/banners/dionysus.png";
 
 const Dionysus: React.FunctionComponent = () => (
-  <Project title="Dionysus" banner={uprightBuildersBanner}>
+  <Project title="Dionysus" banner={dionysusBanner}>
     <ProjectParagraph>
       Michael Irwin is starting his own construction business, called Upright
       Builders. Michael decided to approach our Computer Animation and Web

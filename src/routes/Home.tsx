@@ -80,8 +80,7 @@ const styles = theme => ({
       zIndex: "-1"
     },
     alignItems: "center",
-    boxShadow:
-      "0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22)",
+    boxShadow: theme.shadow,
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",

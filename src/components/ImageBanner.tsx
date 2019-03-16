@@ -14,7 +14,6 @@ const styles = theme => ({
     boxShadow: theme.shadow,
     height: "auto",
     marginBottom: 50,
-    padding: theme.spacing.unit,
     width: "100%"
   }
 });

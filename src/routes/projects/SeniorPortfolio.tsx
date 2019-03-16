@@ -2,10 +2,10 @@ import * as React from "react";
 
 import Project from "src/components/Project";
 import ProjectParagraph from "src/components/ProjectParagraph";
-import uprightBuildersBanner from "src/img/banners/uprightBuilders.png";
+import seniorPortfolioBanner from "src/img/banners/seniorPortfolio.png";
 
 const Penguins: React.FunctionComponent = () => (
-  <Project title="Senior Portfolio" banner={uprightBuildersBanner}>
+  <Project title="Senior Portfolio" banner={seniorPortfolioBanner}>
     <ProjectParagraph>
       Michael Irwin is starting his own construction business, called Upright
       Builders. Michael decided to approach our Computer Animation and Web

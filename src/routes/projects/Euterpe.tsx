@@ -2,10 +2,10 @@ import * as React from "react";
 
 import Project from "src/components/Project";
 import ProjectParagraph from "src/components/ProjectParagraph";
-import uprightBuildersBanner from "src/img/banners/uprightBuilders.png";
+import euterpeBanner from "src/img/banners/euterpe.png";
 
 const Euterpe: React.FunctionComponent = () => (
-  <Project title="Euterpe" banner={uprightBuildersBanner}>
+  <Project title="Euterpe" banner={euterpeBanner}>
     <ProjectParagraph>
       Music is a huge part of my life, and I needed a simple platform to be able
       to listen to whatever song, album, or playlist I wanted to. There are some

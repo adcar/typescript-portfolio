@@ -6,11 +6,10 @@ import ProjectCard from "../components/ProjectCard";
 
 import dionysus from "../img/thumbnails/dionysus.png";
 import euterpe from "../img/thumbnails/euterpe.png";
-import portfolio from "../img/thumbnails/portfolio.png";
-import uprightBuilders from "../img/thumbnails/uprightBuilders.png";
-
-import seniorPortfolio from "../img/thumbnails/seniorPortfolio.png";
 import penguins from "../img/thumbnails/penguins.png";
+import portfolio from "../img/thumbnails/portfolio.png";
+import seniorPortfolio from "../img/thumbnails/seniorPortfolio.png";
+import uprightBuilders from "../img/thumbnails/uprightBuilders.png";
 
 const styles = theme => ({
   desc: {
