@@ -5,7 +5,11 @@ import ProjectParagraph from "src/components/ProjectParagraph";
 import portfolioBanner from "src/img/banners/portfolio.png";
 
 const Portfolio: React.FunctionComponent = () => (
-  <Project title="Portfolio" banner={portfolioBanner}>
+  <Project
+    title="Portfolio"
+    banner={portfolioBanner}
+    liveUrl="https://acardosi.dev"
+  >
     <ProjectParagraph>
       Michael Irwin is starting his own construction business, called Upright
       Builders. Michael decided to approach our Computer Animation and Web

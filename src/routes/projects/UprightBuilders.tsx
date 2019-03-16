@@ -5,7 +5,11 @@ import ProjectParagraph from "src/components/ProjectParagraph";
 import uprightBuildersBanner from "src/img/banners/uprightBuilders.png";
 
 const UprightBuilders: React.FunctionComponent = () => (
-  <Project title="Upright Builders" banner={uprightBuildersBanner}>
+  <Project
+    title="Upright Builders"
+    banner={uprightBuildersBanner}
+    liveUrl="http://uprightbuildersvt.com"
+  >
     <ProjectParagraph>
       Michael Irwin is starting his own construction business, called Upright
       Builders. Michael decided to approach our Computer Animation and Web

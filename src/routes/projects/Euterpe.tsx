@@ -5,7 +5,11 @@ import ProjectParagraph from "src/components/ProjectParagraph";
 import euterpeBanner from "src/img/banners/euterpe.png";
 
 const Euterpe: React.FunctionComponent = () => (
-  <Project title="Euterpe" banner={euterpeBanner}>
+  <Project
+    title="Euterpe"
+    banner={euterpeBanner}
+    liveUrl="https://euterpe.acardosi.dev"
+  >
     <ProjectParagraph>
       Music is a huge part of my life, and I needed a simple platform to be able
       to listen to whatever song, album, or playlist I wanted to. There are some

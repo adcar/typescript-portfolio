@@ -5,7 +5,11 @@ import ProjectParagraph from "src/components/ProjectParagraph";
 import dionysusBanner from "src/img/banners/dionysus.png";
 
 const Dionysus: React.FunctionComponent = () => (
-  <Project title="Dionysus" banner={dionysusBanner}>
+  <Project
+    title="Dionysus"
+    banner={dionysusBanner}
+    liveUrl="https://dionysus.acardosi.dev"
+  >
     <ProjectParagraph>
       Michael Irwin is starting his own construction business, called Upright
       Builders. Michael decided to approach our Computer Animation and Web

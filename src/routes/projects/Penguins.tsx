@@ -5,7 +5,11 @@ import ProjectParagraph from "src/components/ProjectParagraph";
 import penguinsBanner from "src/img/banners/penguins.png";
 
 const Penguins: React.FunctionComponent = () => (
-  <Project title="Penguins" banner={penguinsBanner}>
+  <Project
+    title="Penguins"
+    banner={penguinsBanner}
+    liveUrl="https://penguins.acardosi.dev"
+  >
     <ProjectParagraph>
       Michael Irwin is starting his own construction business, called Upright
       Builders. Michael decided to approach our Computer Animation and Web

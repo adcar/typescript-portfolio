@@ -7,6 +7,12 @@ import PageLabel from "./PageLabel";
 import injectSheet from "react-jss";
 
 const styles = theme => ({
+  link: {
+    color: theme.bg
+  },
+  liveVersion: {
+    paddingBottom: theme.spacing.unit * 2
+  },
   root: {
     backgroundColor: "white"
   },
@@ -18,9 +24,6 @@ const styles = theme => ({
     marginBottom: 25,
     maxWidth: "1000px",
     padding: theme.spacing.unit * 4
-  },
-  liveVersion: {
-    paddingBottom: theme.spacing.unit * 2
   }
 });
 
@@ -45,7 +48,11 @@ const Project: React.FunctionComponent<IProps> = ({
       <ImageBanner title="yay" image={banner} />
       <div className={classes.liveVersion}>
         <Typography variant="h5">
-          Check out the <a href={liveUrl}>live version</a>!
+          Check out the{" "}
+          <a className={classes.link} href={liveUrl}>
+            live version
+          </a>
+          !
         </Typography>
       </div>
       {children}

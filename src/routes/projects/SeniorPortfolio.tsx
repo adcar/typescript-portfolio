@@ -5,7 +5,11 @@ import ProjectParagraph from "src/components/ProjectParagraph";
 import seniorPortfolioBanner from "src/img/banners/seniorPortfolio.png";
 
 const Penguins: React.FunctionComponent = () => (
-  <Project title="Senior Portfolio" banner={seniorPortfolioBanner}>
+  <Project
+    title="Senior Portfolio"
+    banner={seniorPortfolioBanner}
+    liveUrl="https://senior-portfolio.acardosi.dev"
+  >
     <ProjectParagraph>
       Michael Irwin is starting his own construction business, called Upright
       Builders. Michael decided to approach our Computer Animation and Web
