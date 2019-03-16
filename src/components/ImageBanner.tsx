@@ -5,6 +5,7 @@ import injectSheet from "react-jss";
 interface ImageBannerProps {
   image: string;
   classes: any;
+  link: string;
 }
 
 const styles = theme => ({
@@ -19,9 +20,11 @@ const styles = theme => ({
 });
 
 const ImageBanner: React.SFC<ImageBannerProps> = props => {
-  const { classes } = props;
+  const { classes, link, image } = props;
   return (
-    <img className={classes.banner} src={props.image} alt="Banner Image" />
+    <a href={link} title="Live version">
+      <img className={classes.banner} src={image} alt="Banner Image" />
+    </a>
   );
 };
 

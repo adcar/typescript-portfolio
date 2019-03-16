@@ -11,49 +11,27 @@ const Penguins: React.FunctionComponent = () => (
     liveUrl="https://penguins.acardosi.dev"
   >
     <ProjectParagraph>
-      Michael Irwin is starting his own construction business, called Upright
-      Builders. Michael decided to approach our Computer Animation and Web
-      Design (CAWD) program and ask us if we could help with his website. Alex
-      Goodman and I happily agreed and began working on his website and logo.
-      Alex was in charge of graphic design aspects, whereas I worked on the more
-      technical side of things, by building a Wordpress theme. This website is
-      powered by a program called Wordpress, which allows easy editing of pages
-      through a interface comparable to Google Docs. This allows the client to
-      add their own content, without having any knowledge of programming or web
-      design. I had never used Wordpress before, but I was enthused to begin
-      learning the software. Behind the scenes, I used HTML, CSS, JavaScript,
-      and PHP to design the theme. I began thinking of some different site
-      ideas, and asked the client for his input. After we had decided a general
-      site design, I started out with a base HTML5 theme and modified everything
-      until it fit the client’s needs perfectly. Throughout this process, I made
-      an abundance of revisions. Anytime the client wanted to change something I
-      would be sure to meet his needs. For example, the client recently asked
-      for me to add a slideshow, and a couple days later I gave him a
-      fully-functional carousel with Wordpress integration (for allowing the
-      swapping of images).
+      I love penguins. They are by far the coolest creatures on planet Earth.
+      Anyway, My assignment for this project was to create a website about
+      anything, as long as it followed a particular style. I decided to use
+      React and my own JSS code for this website. I could've used HTML and SCSS
+      as well since this is just a one page site.
     </ProjectParagraph>
     <ProjectParagraph>
-      The Upright Builders website represents how I can adapt to new situations
-      quickly and efficiently. This project is also a great example of real-life
-      client work. Above all, I am pleased with how the site came out and enjoy
-      the overall design. Throughout this project, I learned the ins and outs of
-      Wordpress, as well as how to talk to clients and ask for their input. I
-      would show the client some design ideas, and ask for his input, rather
-      than building something that only I enjoyed.
+      The design was the most important part of this project. I made sure
+      everything looked aesthetically pleasing. Every image has a subtle purple
+      gradient that gives the design plenty of contrast. At the bottom of the
+      site, you can see a penguin I created using only CSS!
     </ProjectParagraph>
     <ProjectParagraph>
-      If I were to do this project over, I would probably use something other
-      than Wordpress. It’s a great tool, but it can be difficult to work with at
-      times. I much prefer JavaScript over PHP so I’d be inclined to use
-      something like GatsbyJS + Netlify CMS + React. This stack would still
-      allow for an easy-to-use interface for the client, but it would also allow
-      me to code using JavaScript and React.
+      If I were to do this project over, I would probably not use React. I got a
+      bit caught up in using React for everything and this project really didn't
+      need it. A one page site that doesn't get its content from any CMS isn't
+      somewhere React code should be.
     </ProjectParagraph>
     <ProjectParagraph>
-      Overall, I’m very happy with this project. I found it was important to
-      keep believing in myself, even when I was struggling with the technical
-      details of Wordpress. This project gave me valuable real world experience
-      while still attending High School.
+      Overall, I’m really happy with this project. It came out a lot better than
+      I was expecting.
     </ProjectParagraph>
   </Project>
 );

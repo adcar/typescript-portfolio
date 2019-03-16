@@ -11,13 +11,14 @@ const styles = theme => ({
     color: theme.bg
   },
   liveVersion: {
+    alignSelf: "center",
     paddingBottom: theme.spacing.unit * 2
   },
   root: {
     backgroundColor: "white"
   },
   summary: {
-    alignItems: "center",
+    alignItems: "flex-start",
     display: "flex",
     flexDirection: "column",
     margin: "0 auto",
@@ -45,7 +46,7 @@ const Project: React.FunctionComponent<IProps> = ({
     <PageLabel title={title} />
 
     <div className={classes.summary}>
-      <ImageBanner title="yay" image={banner} />
+      <ImageBanner title="yay" image={banner} link={liveUrl} />
       <div className={classes.liveVersion}>
         <Typography variant="h5">
           Check out the{" "}
