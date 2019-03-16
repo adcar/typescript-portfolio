@@ -93,6 +93,54 @@ const Skills: React.SFC<IProps> = ({ classes }) => (
         }}
       />
     </div>
+    <div>
+      <Typography variant="h6" gutterBottom={true}>
+        Python
+      </Typography>
+      <LinearProgress
+        variant="determinate"
+        value={40}
+        classes={{
+          root: classes.progressRoot
+        }}
+      />
+    </div>
+    <div>
+      <Typography variant="h6" gutterBottom={true}>
+        Java
+      </Typography>
+      <LinearProgress
+        variant="determinate"
+        value={60}
+        classes={{
+          root: classes.progressRoot
+        }}
+      />
+    </div>
+    <div>
+      <Typography variant="h6" gutterBottom={true}>
+        PHP
+      </Typography>
+      <LinearProgress
+        variant="determinate"
+        value={70}
+        classes={{
+          root: classes.progressRoot
+        }}
+      />
+    </div>
+    <div>
+      <Typography variant="h6" gutterBottom={true}>
+        SQL
+      </Typography>
+      <LinearProgress
+        variant="determinate"
+        value={20}
+        classes={{
+          root: classes.progressRoot
+        }}
+      />
+    </div>
   </div>
 );
 
