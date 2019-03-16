@@ -31,6 +31,9 @@ const styles = theme => ({
     clear: "left",
     paddingTop: "50px"
   },
+  text: {
+    fontSize: "14pt"
+  },
   wrapper: {
     color: "white",
     margin: "0 auto",
@@ -46,7 +49,7 @@ const AboutMe: React.SFC<IProps> = ({ classes }) => (
       <div>
         <img className={classes.image} src={ProfilePhoto} alt="Profile Photo" />
         <Typography variant="h5">Introduction</Typography>
-        <Typography>
+        <Typography className={classes.text}>
           Hi, I'm Alexander Cardosi, an aspiring front-end developer from
           Colchester, Vermont. I'm currently studying Software Engineering at
           Vermont Technical College. My interests generally involve computer
@@ -56,7 +59,7 @@ const AboutMe: React.SFC<IProps> = ({ classes }) => (
 
       <div className={classes.section}>
         <Typography variant="h5">Interests</Typography>
-        <Typography>
+        <Typography className={classes.text}>
           I have a few hobbies, most of which revolve around Computer Science.
           My hobbies include web development, software enginnering, photography,
           graphic design, and maintaining a few Arch Linux packages.
@@ -64,14 +67,14 @@ const AboutMe: React.SFC<IProps> = ({ classes }) => (
       </div>
       <div className={classes.section}>
         <Typography variant="h5">Social Media</Typography>
-        <Typography>
+        <Typography className={classes.text}>
           You can find me on <a href="https://github.com/adcar">GitHub</a> and{" "}
           <a href="https://twitter.com/adcardosi">Twitter</a>.
         </Typography>
       </div>
       <div className={classes.section}>
         <Typography variant="h5">Credits</Typography>
-        <Typography>
+        <Typography className={classes.text}>
           This website was created with{" "}
           <a href="https://reactjs.org" className={classes.link}>
             React
