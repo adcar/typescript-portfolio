@@ -89,7 +89,7 @@ const AboutMe: React.SFC<IProps> = ({ classes }) => (
           </a>
           .
         </Typography>
-        <Typography>
+        <Typography className={classes.text}>
           Icons are provided by{" "}
           <a href="https://material.io/tools/icons/" className={classes.link}>
             Material Icons
@@ -98,15 +98,19 @@ const AboutMe: React.SFC<IProps> = ({ classes }) => (
           <a href="https://www.freepik.com" className={classes.link}>
             FreePik
           </a>
+          .
         </Typography>
-        <Typography>
+        <Typography className={classes.text}>
           Header Photo by{" "}
-          <a href="https://unsplash.com/@laurenmancke" className={classes.link}>
-            Lauren Mancke
+          <a href="https://www.pexels.com/@kasuma" className={classes.link}>
+            Kasuma
           </a>{" "}
           on{" "}
-          <a href="https://unsplash.com/" className={classes.link}>
-            Unsplash
+          <a
+            href="https://www.pexels.com/photo/adventure-alpine-alps-blue-sky-427676/"
+            className={classes.link}
+          >
+            Pexels
           </a>
           .
         </Typography>
