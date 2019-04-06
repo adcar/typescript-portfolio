@@ -14,11 +14,20 @@ import Experience from "../components/Experience";
 import PageLabel from "../components/PageLabel";
 import Skills from "../components/Skills";
 
+import Button from "@material-ui/core/Button";
+
+import DownloadIcon from "@material-ui/icons/ArrowDownward";
+
 interface IProps {
   classes: any;
 }
 
 const styles = theme => ({
+  button: {
+    color: "white",
+    justifySelf: "center",
+    margin: "0 auto"
+  },
   icon: {
     color: theme.secondary,
     height: 40,
@@ -43,6 +52,9 @@ const styles = theme => ({
     marginTop: 50
   },
   wrapper: {
+    display: "flex",
+    flexDirection: "column",
+
     color: "white",
     margin: "0 auto",
     maxWidth: 800,
@@ -70,6 +82,16 @@ const Resume: React.SFC<IProps> = ({ classes }) => (
         <AwardsIcon className={classes.icon} /> Awards
       </Typography>
       <Awards />
+      <Button
+        variant="contained"
+        color="primary"
+        className={classes.button}
+        component="a"
+        href="/dl/resume.pdf"
+      >
+        <DownloadIcon style={{ marginRight: 10 }} />
+        Download (PDF)
+      </Button>
     </div>
   </div>
 );
