@@ -5,7 +5,7 @@ import NTHS from "../icons/NTHS";
 import SkillsStates from "../icons/SkillsStates";
 import SkillsUSA from "../icons/SkillsUSA";
 
-import Award from "./Award";
+import Award from "./BoxWithIcon";
 
 interface IProps {
   classes: any;

@@ -8,7 +8,7 @@ import injectSheet from "react-jss";
 
 const styles = theme => ({
   link: {
-    color: theme.bg
+    color: theme.secondary
   },
   liveVersion: {
     alignSelf: "center",

@@ -4,9 +4,13 @@ import Typography from "@material-ui/core/Typography";
 import EducationIcon from "@material-ui/icons/School";
 import AwardsIcon from "@material-ui/icons/Star";
 import SkillsIcon from "@material-ui/icons/Whatshot";
+import WorkIcon from "@material-ui/icons/Work";
+
 import injectSheet from "react-jss";
+
 import Awards from "../components/Awards";
 import EducationTimeline from "../components/EducationTimeline";
+import Experience from "../components/Experience";
 import PageLabel from "../components/PageLabel";
 import Skills from "../components/Skills";
 
@@ -48,7 +52,7 @@ const styles = theme => ({
 
 const Resume: React.SFC<IProps> = ({ classes }) => (
   <div className={classes.root}>
-    <PageLabel title="Resume" />
+    <PageLabel title="Résumé" />
     <div className={classes.wrapper}>
       <Typography variant="display2" component="h2" className={classes.title}>
         <SkillsIcon className={classes.icon} /> Skills
@@ -58,7 +62,10 @@ const Resume: React.SFC<IProps> = ({ classes }) => (
         <EducationIcon className={classes.icon} /> Education
       </Typography>
       <EducationTimeline />
-
+      <Typography variant="display2" component="h2" className={classes.title}>
+        <WorkIcon className={classes.icon} /> Experience
+      </Typography>
+      <Experience />
       <Typography variant="display2" component="h2" className={classes.title}>
         <AwardsIcon className={classes.icon} /> Awards
       </Typography>
