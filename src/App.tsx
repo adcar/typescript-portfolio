@@ -59,55 +59,52 @@ interface IProps {
   classes: any;
 }
 
-class App extends React.Component<IProps> {
-  public render() {
-    const { classes } = this.props;
-    return (
-      <div className={classes.bg}>
-        <MuiThemeProvider theme={theme}>
-          <Router>
-            <AppWrapper>
-              <div>
-                <Navbar />
-                <div id="outer-container">
-                  <div id="page-wrap">
-                    <div className={classes.wrap}>
-                      <Route path="/" exact={true} component={Home} />
-                      <Route path="/resume" component={Resume} />
-                      <Route path="/about-me" component={AboutMe} />
-                      <Route path="/projects" component={Projects} />
+const App: React.FunctionComponent<IProps> = ({ classes }) => {
+  return (
+    <div className={classes.bg}>
+      <MuiThemeProvider theme={theme}>
+        <Router>
+          <AppWrapper>
+            <div>
+              <Navbar />
+              <div id="outer-container">
+                <div id="page-wrap">
+                  <div className={classes.wrap}>
+                    <Route path="/" exact={true} component={Home} />
+                    <Route path="/resume" component={Resume} />
+                    <Route path="/about-me" component={AboutMe} />
+                    <Route path="/projects" component={Projects} />
 
-                      <Route
-                        path="/project/upright-builders"
-                        component={UprightBuilders}
-                      />
+                    <Route
+                      path="/project/upright-builders"
+                      component={UprightBuilders}
+                    />
 
-                      <Route path="/project/euterpe" component={Euterpe} />
+                    <Route path="/project/euterpe" component={Euterpe} />
 
-                      <Route path="/project/dionysus" component={Dionysus} />
+                    <Route path="/project/dionysus" component={Dionysus} />
 
-                      <Route
-                        path="/project/senior-portfolio"
-                        component={SeniorPortfolio}
-                      />
+                    <Route
+                      path="/project/senior-portfolio"
+                      component={SeniorPortfolio}
+                    />
 
-                      <Route path="/project/penguins" component={Penguins} />
+                    <Route path="/project/penguins" component={Penguins} />
 
-                      <Route path="/project/portfolio" component={Portfolio} />
-                      <Route />
-                      <Route />
-                      <Route />
-                    </div>
-                    <Footer />
+                    <Route path="/project/portfolio" component={Portfolio} />
+                    <Route />
+                    <Route />
+                    <Route />
                   </div>
+                  <Footer />
                 </div>
               </div>
-            </AppWrapper>
-          </Router>
-        </MuiThemeProvider>
-      </div>
-    );
-  }
-}
+            </div>
+          </AppWrapper>
+        </Router>
+      </MuiThemeProvider>
+    </div>
+  );
+};
 
 export default injectSheet(styles)(App);
