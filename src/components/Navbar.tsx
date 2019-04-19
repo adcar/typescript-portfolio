@@ -93,14 +93,20 @@ interface IState {
 }
 
 class Navbar extends React.Component<IProps, IState> {
-  public state = {
-    isOpen: false
-  };
-  public close = () => {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isOpen: false
+    };
+    this.setOpenStatus = this.setOpenStatus.bind(this);
+    this.close = this.close.bind(this);
+  }
+
+  public close() {
     this.setState({
       isOpen: false
     });
-  };
+  }
 
   public render() {
     const { classes } = this.props;
@@ -114,6 +120,7 @@ class Navbar extends React.Component<IProps, IState> {
           pageWrapId={"page-wrap"}
           outerContainerId={"outer-container"}
           isOpen={isOpen}
+          onStateChange={this.setOpenStatus}
         >
           <NavList close={this.close} />
         </Menu>
@@ -124,6 +131,12 @@ class Navbar extends React.Component<IProps, IState> {
         </Typography>
       </nav>
     );
+  }
+
+  private setOpenStatus(state: any) {
+    this.setState({
+      isOpen: state.isOpen
+    });
   }
 }
 export default injectSheet(styles)(Navbar);

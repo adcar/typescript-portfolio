@@ -66,19 +66,19 @@ const Resume: React.SFC<IProps> = ({ classes }) => (
   <div className={classes.root}>
     <PageLabel title="Résumé" />
     <div className={classes.wrapper}>
-      <Typography variant="display2" component="h2" className={classes.title}>
+      <Typography variant="h2" component="h2" className={classes.title}>
         <SkillsIcon className={classes.icon} /> Skills
       </Typography>
       <Skills />
-      <Typography variant="display2" component="h2" className={classes.title}>
+      <Typography variant="h2" component="h2" className={classes.title}>
         <EducationIcon className={classes.icon} /> Education
       </Typography>
       <EducationTimeline />
-      <Typography variant="display2" component="h2" className={classes.title}>
+      <Typography variant="h2" component="h2" className={classes.title}>
         <WorkIcon className={classes.icon} /> Experience
       </Typography>
       <Experience />
-      <Typography variant="display2" component="h2" className={classes.title}>
+      <Typography variant="h2" component="h2" className={classes.title}>
         <AwardsIcon className={classes.icon} /> Awards
       </Typography>
       <Awards />

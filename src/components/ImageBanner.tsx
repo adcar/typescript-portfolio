@@ -2,7 +2,7 @@ import * as React from "react";
 
 import injectSheet from "react-jss";
 
-interface ImageBannerProps {
+interface IProps {
   image: string;
   classes: any;
   link: string;
@@ -19,7 +19,7 @@ const styles = theme => ({
   }
 });
 
-const ImageBanner: React.SFC<ImageBannerProps> = props => {
+const ImageBanner: React.SFC<IProps> = props => {
   const { classes, link, image } = props;
   return (
     <a href={link} title="Live version">
